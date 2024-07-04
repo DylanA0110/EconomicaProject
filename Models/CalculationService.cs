@@ -126,8 +126,8 @@ namespace Models
 
         public decimal CalcularTMAR(Tmar tmar)
         {
-            // Fórmula: TMAR = TLR + PR
-            return tmar.TasaLibreDeRiesgo + tmar.PrimaDeRiesgo;
+            // Fórmula: TMAR = i + f + (i * f)
+            return tmar.TasaLibreDeRiesgo + tmar.PrimaDeRiesgo + (tmar.TasaLibreDeRiesgo * tmar.PrimaDeRiesgo);
         }
 
         // Tasa Interna de Retorno (TIR)
@@ -191,6 +191,14 @@ namespace Models
                 decimal interes = saldo * tasaInteresMensual;
                 decimal principal = pagoMensual - interes;
                 saldo -= principal;
+
+                // Asegurarse de que el saldo final sea cero para el último periodo
+                if (i == prestamo.NumeroPeriodos)
+                {
+                    principal += saldo; // Ajustar el principal para que el saldo sea cero
+                    saldo = 0;
+                }
+
                 calendario.Add(new Pago { Periodo = i, Interes = interes, Principal = principal, Cuota = pagoMensual, Saldo = saldo });
             }
 
