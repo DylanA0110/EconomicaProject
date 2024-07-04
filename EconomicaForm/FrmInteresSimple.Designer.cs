@@ -29,86 +29,86 @@
         private void InitializeComponent()
         {
             tabPage4 = new TabPage();
-            panel4 = new Panel();
-            label20 = new Label();
-            pictureBox4 = new PictureBox();
-            label19 = new Label();
-            btnCalPeriodo = new Button();
-            PtxtVP = new TextBox();
-            PtxtTI = new TextBox();
-            PtxtVF = new TextBox();
-            PtxtResultado = new TextBox();
-            label17 = new Label();
-            label16 = new Label();
-            label18 = new Label();
-            btnClearPeriodo = new Button();
-            label30 = new Label();
             pictureBox9 = new PictureBox();
+            label30 = new Label();
+            btnClearPeriodo = new Button();
+            label18 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            PtxtResultado = new TextBox();
+            PtxtVF = new TextBox();
+            PtxtTI = new TextBox();
+            PtxtVP = new TextBox();
+            btnCalPeriodo = new Button();
+            label19 = new Label();
+            panel4 = new Panel();
+            pictureBox4 = new PictureBox();
+            label20 = new Label();
             tabPage3 = new TabPage();
-            panel3 = new Panel();
-            label14 = new Label();
-            pictureBox3 = new PictureBox();
-            label13 = new Label();
-            label12 = new Label();
-            btnCalInteres = new Button();
-            ItxtVP = new TextBox();
-            ItxtTI = new TextBox();
-            ItxtP = new TextBox();
-            ItxtResultado = new TextBox();
-            label11 = new Label();
-            label15 = new Label();
-            btnClearInteres = new Button();
-            label29 = new Label();
             pictureBox8 = new PictureBox();
+            label29 = new Label();
+            btnClearInteres = new Button();
+            label15 = new Label();
+            label11 = new Label();
+            ItxtResultado = new TextBox();
+            ItxtP = new TextBox();
+            ItxtTI = new TextBox();
+            ItxtVP = new TextBox();
+            btnCalInteres = new Button();
+            label12 = new Label();
+            label13 = new Label();
+            panel3 = new Panel();
+            pictureBox3 = new PictureBox();
+            label14 = new Label();
             tabPage2 = new TabPage();
-            label8 = new Label();
-            panel2 = new Panel();
-            label7 = new Label();
-            pictureBox2 = new PictureBox();
-            label6 = new Label();
-            label5 = new Label();
-            btnCalVP = new Button();
-            VPtxtVF = new TextBox();
-            VPtxtTI = new TextBox();
-            VPtxtP = new TextBox();
-            VPtxtResultado = new TextBox();
-            label10 = new Label();
-            btnClearVP = new Button();
-            label28 = new Label();
             pictureBox7 = new PictureBox();
+            label28 = new Label();
+            btnClearVP = new Button();
+            label10 = new Label();
+            VPtxtResultado = new TextBox();
+            VPtxtP = new TextBox();
+            VPtxtTI = new TextBox();
+            VPtxtVF = new TextBox();
+            btnCalVP = new Button();
+            label5 = new Label();
+            label6 = new Label();
+            panel2 = new Panel();
+            pictureBox2 = new PictureBox();
+            label7 = new Label();
+            label8 = new Label();
             tabPage1 = new TabPage();
-            label2 = new Label();
-            panel1 = new Panel();
-            label1 = new Label();
-            pictureBox1 = new PictureBox();
-            label3 = new Label();
-            label4 = new Label();
-            btnCalVF = new Button();
-            VFtxtVP = new TextBox();
-            VFtxtTI = new TextBox();
-            VFtxtPeriodo = new TextBox();
-            VFtxtResultado = new TextBox();
-            label9 = new Label();
-            btnClearVF = new Button();
-            label27 = new Label();
             pictureBox6 = new PictureBox();
+            label27 = new Label();
+            btnClearVF = new Button();
+            label9 = new Label();
+            VFtxtResultado = new TextBox();
+            VFtxtPeriodo = new TextBox();
+            VFtxtTI = new TextBox();
+            VFtxtVP = new TextBox();
+            btnCalVF = new Button();
+            label4 = new Label();
+            label3 = new Label();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
             tabControl1 = new TabControl();
             tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             tabControl1.SuspendLayout();
             SuspendLayout();
             // 
@@ -135,122 +135,25 @@
             tabPage4.Text = "Periodo";
             tabPage4.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // pictureBox9
             // 
-            panel4.BackColor = Color.Black;
-            panel4.Controls.Add(pictureBox4);
-            panel4.Controls.Add(label20);
-            panel4.Location = new Point(0, 3);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(871, 53);
-            panel4.TabIndex = 31;
+            pictureBox9.Image = Properties.Resources.FormaNIs;
+            pictureBox9.Location = new Point(645, 81);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(159, 59);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 43;
+            pictureBox9.TabStop = false;
             // 
-            // label20
+            // label30
             // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label20.ForeColor = Color.White;
-            label20.Location = new Point(416, 6);
-            label20.Name = "label20";
-            label20.Size = new Size(113, 32);
-            label20.TabIndex = 1;
-            label20.Text = "Periodo";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.reloj_de_arena__1_;
-            pictureBox4.Location = new Point(353, 6);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(41, 35);
-            pictureBox4.TabIndex = 2;
-            pictureBox4.TabStop = false;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Century", 12F, FontStyle.Bold);
-            label19.Location = new Point(470, 199);
-            label19.Name = "label19";
-            label19.Size = new Size(143, 20);
-            label19.TabIndex = 33;
-            label19.Text = "Tasa interes(%):";
-            // 
-            // btnCalPeriodo
-            // 
-            btnCalPeriodo.FlatAppearance.BorderColor = Color.White;
-            btnCalPeriodo.FlatAppearance.MouseDownBackColor = Color.White;
-            btnCalPeriodo.FlatAppearance.MouseOverBackColor = Color.White;
-            btnCalPeriodo.FlatStyle = FlatStyle.Flat;
-            btnCalPeriodo.Image = Properties.Resources.calculadora;
-            btnCalPeriodo.Location = new Point(353, 445);
-            btnCalPeriodo.Name = "btnCalPeriodo";
-            btnCalPeriodo.Size = new Size(193, 66);
-            btnCalPeriodo.TabIndex = 36;
-            btnCalPeriodo.UseVisualStyleBackColor = true;
-            btnCalPeriodo.Click += btnCalPeriodo_Click;
-            // 
-            // PtxtVP
-            // 
-            PtxtVP.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PtxtVP.Location = new Point(257, 199);
-            PtxtVP.Name = "PtxtVP";
-            PtxtVP.Size = new Size(135, 23);
-            PtxtVP.TabIndex = 30;
-            // 
-            // PtxtTI
-            // 
-            PtxtTI.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PtxtTI.Location = new Point(619, 196);
-            PtxtTI.Name = "PtxtTI";
-            PtxtTI.Size = new Size(135, 23);
-            PtxtTI.TabIndex = 32;
-            // 
-            // PtxtVF
-            // 
-            PtxtVF.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PtxtVF.Location = new Point(439, 294);
-            PtxtVF.Name = "PtxtVF";
-            PtxtVF.Size = new Size(135, 23);
-            PtxtVF.TabIndex = 34;
-            // 
-            // PtxtResultado
-            // 
-            PtxtResultado.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PtxtResultado.Location = new Point(655, 467);
-            PtxtResultado.Name = "PtxtResultado";
-            PtxtResultado.ReadOnly = true;
-            PtxtResultado.Size = new Size(135, 23);
-            PtxtResultado.TabIndex = 37;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Century", 12F, FontStyle.Bold);
-            label17.Location = new Point(552, 468);
-            label17.Name = "label17";
-            label17.Size = new Size(97, 20);
-            label17.TabIndex = 38;
-            label17.Text = "Resultado:";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Century", 12F, FontStyle.Bold);
-            label16.Location = new Point(115, 199);
-            label16.Name = "label16";
-            label16.Size = new Size(136, 20);
-            label16.TabIndex = 39;
-            label16.Text = "Valor presente:";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Century", 12F, FontStyle.Bold);
-            label18.Location = new Point(316, 297);
-            label18.Name = "label18";
-            label18.Size = new Size(117, 20);
-            label18.TabIndex = 40;
-            label18.Text = "Valor futuro:";
+            label30.AutoSize = true;
+            label30.Font = new Font("Century", 12F, FontStyle.Bold);
+            label30.Location = new Point(510, 98);
+            label30.Name = "label30";
+            label30.Size = new Size(139, 20);
+            label30.TabIndex = 42;
+            label30.Text = "Formula usada:";
             // 
             // btnClearPeriodo
             // 
@@ -266,25 +169,122 @@
             btnClearPeriodo.UseVisualStyleBackColor = true;
             btnClearPeriodo.Click += btnClearPeriodo_Click;
             // 
-            // label30
+            // label18
             // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Century", 12F, FontStyle.Bold);
-            label30.Location = new Point(510, 98);
-            label30.Name = "label30";
-            label30.Size = new Size(139, 20);
-            label30.TabIndex = 42;
-            label30.Text = "Formula usada:";
+            label18.AutoSize = true;
+            label18.Font = new Font("Century", 12F, FontStyle.Bold);
+            label18.Location = new Point(316, 297);
+            label18.Name = "label18";
+            label18.Size = new Size(117, 20);
+            label18.TabIndex = 40;
+            label18.Text = "Valor futuro:";
             // 
-            // pictureBox9
+            // label16
             // 
-            pictureBox9.Image = Properties.Resources.FormaNIs;
-            pictureBox9.Location = new Point(645, 81);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(159, 59);
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox9.TabIndex = 43;
-            pictureBox9.TabStop = false;
+            label16.AutoSize = true;
+            label16.Font = new Font("Century", 12F, FontStyle.Bold);
+            label16.Location = new Point(115, 199);
+            label16.Name = "label16";
+            label16.Size = new Size(136, 20);
+            label16.TabIndex = 39;
+            label16.Text = "Valor presente:";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Century", 12F, FontStyle.Bold);
+            label17.Location = new Point(552, 468);
+            label17.Name = "label17";
+            label17.Size = new Size(97, 20);
+            label17.TabIndex = 38;
+            label17.Text = "Resultado:";
+            // 
+            // PtxtResultado
+            // 
+            PtxtResultado.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PtxtResultado.Location = new Point(655, 467);
+            PtxtResultado.Name = "PtxtResultado";
+            PtxtResultado.ReadOnly = true;
+            PtxtResultado.Size = new Size(135, 23);
+            PtxtResultado.TabIndex = 37;
+            // 
+            // PtxtVF
+            // 
+            PtxtVF.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PtxtVF.Location = new Point(439, 294);
+            PtxtVF.Name = "PtxtVF";
+            PtxtVF.Size = new Size(135, 23);
+            PtxtVF.TabIndex = 34;
+            // 
+            // PtxtTI
+            // 
+            PtxtTI.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PtxtTI.Location = new Point(619, 196);
+            PtxtTI.Name = "PtxtTI";
+            PtxtTI.Size = new Size(135, 23);
+            PtxtTI.TabIndex = 32;
+            // 
+            // PtxtVP
+            // 
+            PtxtVP.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PtxtVP.Location = new Point(257, 199);
+            PtxtVP.Name = "PtxtVP";
+            PtxtVP.Size = new Size(135, 23);
+            PtxtVP.TabIndex = 30;
+            // 
+            // btnCalPeriodo
+            // 
+            btnCalPeriodo.FlatAppearance.BorderColor = Color.White;
+            btnCalPeriodo.FlatAppearance.MouseDownBackColor = Color.White;
+            btnCalPeriodo.FlatAppearance.MouseOverBackColor = Color.White;
+            btnCalPeriodo.FlatStyle = FlatStyle.Flat;
+            btnCalPeriodo.Image = Properties.Resources.calculadora;
+            btnCalPeriodo.Location = new Point(353, 445);
+            btnCalPeriodo.Name = "btnCalPeriodo";
+            btnCalPeriodo.Size = new Size(193, 66);
+            btnCalPeriodo.TabIndex = 36;
+            btnCalPeriodo.UseVisualStyleBackColor = true;
+            btnCalPeriodo.Click += btnCalPeriodo_Click;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Century", 12F, FontStyle.Bold);
+            label19.Location = new Point(470, 199);
+            label19.Name = "label19";
+            label19.Size = new Size(143, 20);
+            label19.TabIndex = 33;
+            label19.Text = "Tasa interes(%):";
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Black;
+            panel4.Controls.Add(pictureBox4);
+            panel4.Controls.Add(label20);
+            panel4.Location = new Point(0, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(871, 53);
+            panel4.TabIndex = 31;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.reloj_de_arena__1_;
+            pictureBox4.Location = new Point(353, 6);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(41, 35);
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label20.ForeColor = Color.White;
+            label20.Location = new Point(416, 6);
+            label20.Name = "label20";
+            label20.Size = new Size(113, 32);
+            label20.TabIndex = 1;
+            label20.Text = "Periodo";
             // 
             // tabPage3
             // 
@@ -309,122 +309,25 @@
             tabPage3.Text = "Interes";
             tabPage3.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // pictureBox8
             // 
-            panel3.BackColor = Color.FromArgb(34, 54, 97);
-            panel3.Controls.Add(pictureBox3);
-            panel3.Controls.Add(label14);
-            panel3.Location = new Point(1, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(871, 53);
-            panel3.TabIndex = 21;
+            pictureBox8.Image = Properties.Resources.FOmrulaISI;
+            pictureBox8.Location = new Point(647, 94);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(159, 44);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 32;
+            pictureBox8.TabStop = false;
             // 
-            // label14
+            // label29
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(416, 6);
-            label14.Name = "label14";
-            label14.Size = new Size(101, 32);
-            label14.TabIndex = 1;
-            label14.Text = "Interes";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.tasa_de_interes_flotante;
-            pictureBox3.Location = new Point(353, 6);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(41, 35);
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Century", 12F, FontStyle.Bold);
-            label13.Location = new Point(481, 222);
-            label13.Name = "label13";
-            label13.Size = new Size(143, 20);
-            label13.TabIndex = 23;
-            label13.Text = "Tasa interes(%):";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Century", 12F, FontStyle.Bold);
-            label12.Location = new Point(339, 315);
-            label12.Name = "label12";
-            label12.Size = new Size(77, 20);
-            label12.TabIndex = 25;
-            label12.Text = "Periodo:";
-            // 
-            // btnCalInteres
-            // 
-            btnCalInteres.FlatAppearance.BorderColor = Color.White;
-            btnCalInteres.FlatAppearance.MouseDownBackColor = Color.White;
-            btnCalInteres.FlatAppearance.MouseOverBackColor = Color.White;
-            btnCalInteres.FlatStyle = FlatStyle.Flat;
-            btnCalInteres.Image = Properties.Resources.calculadora;
-            btnCalInteres.Location = new Point(354, 445);
-            btnCalInteres.Name = "btnCalInteres";
-            btnCalInteres.Size = new Size(193, 66);
-            btnCalInteres.TabIndex = 26;
-            btnCalInteres.UseVisualStyleBackColor = true;
-            btnCalInteres.Click += btnCalInteres_Click;
-            // 
-            // ItxtVP
-            // 
-            ItxtVP.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ItxtVP.Location = new Point(268, 222);
-            ItxtVP.Name = "ItxtVP";
-            ItxtVP.Size = new Size(135, 23);
-            ItxtVP.TabIndex = 20;
-            // 
-            // ItxtTI
-            // 
-            ItxtTI.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ItxtTI.Location = new Point(630, 219);
-            ItxtTI.Name = "ItxtTI";
-            ItxtTI.Size = new Size(135, 23);
-            ItxtTI.TabIndex = 22;
-            // 
-            // ItxtP
-            // 
-            ItxtP.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ItxtP.Location = new Point(430, 315);
-            ItxtP.Name = "ItxtP";
-            ItxtP.Size = new Size(135, 23);
-            ItxtP.TabIndex = 24;
-            // 
-            // ItxtResultado
-            // 
-            ItxtResultado.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ItxtResultado.Location = new Point(656, 465);
-            ItxtResultado.Name = "ItxtResultado";
-            ItxtResultado.ReadOnly = true;
-            ItxtResultado.Size = new Size(135, 23);
-            ItxtResultado.TabIndex = 27;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Century", 12F, FontStyle.Bold);
-            label11.Location = new Point(553, 468);
-            label11.Name = "label11";
-            label11.Size = new Size(97, 20);
-            label11.TabIndex = 28;
-            label11.Text = "Resultado:";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Century", 12F, FontStyle.Bold);
-            label15.Location = new Point(126, 222);
-            label15.Name = "label15";
-            label15.Size = new Size(136, 20);
-            label15.TabIndex = 29;
-            label15.Text = "Valor presente:";
+            label29.AutoSize = true;
+            label29.Font = new Font("Century", 12F, FontStyle.Bold);
+            label29.Location = new Point(502, 105);
+            label29.Name = "label29";
+            label29.Size = new Size(139, 20);
+            label29.TabIndex = 31;
+            label29.Text = "Formula usada:";
             // 
             // btnClearInteres
             // 
@@ -440,25 +343,122 @@
             btnClearInteres.UseVisualStyleBackColor = true;
             btnClearInteres.Click += btnClearInteres_Click;
             // 
-            // label29
+            // label15
             // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Century", 12F, FontStyle.Bold);
-            label29.Location = new Point(502, 105);
-            label29.Name = "label29";
-            label29.Size = new Size(139, 20);
-            label29.TabIndex = 31;
-            label29.Text = "Formula usada:";
+            label15.AutoSize = true;
+            label15.Font = new Font("Century", 12F, FontStyle.Bold);
+            label15.Location = new Point(126, 222);
+            label15.Name = "label15";
+            label15.Size = new Size(136, 20);
+            label15.TabIndex = 29;
+            label15.Text = "Valor presente:";
             // 
-            // pictureBox8
+            // label11
             // 
-            pictureBox8.Image = Properties.Resources.FOmrulaISI;
-            pictureBox8.Location = new Point(647, 94);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(159, 44);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 32;
-            pictureBox8.TabStop = false;
+            label11.AutoSize = true;
+            label11.Font = new Font("Century", 12F, FontStyle.Bold);
+            label11.Location = new Point(553, 468);
+            label11.Name = "label11";
+            label11.Size = new Size(97, 20);
+            label11.TabIndex = 28;
+            label11.Text = "Resultado:";
+            // 
+            // ItxtResultado
+            // 
+            ItxtResultado.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ItxtResultado.Location = new Point(656, 465);
+            ItxtResultado.Name = "ItxtResultado";
+            ItxtResultado.ReadOnly = true;
+            ItxtResultado.Size = new Size(135, 23);
+            ItxtResultado.TabIndex = 27;
+            // 
+            // ItxtP
+            // 
+            ItxtP.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ItxtP.Location = new Point(430, 315);
+            ItxtP.Name = "ItxtP";
+            ItxtP.Size = new Size(135, 23);
+            ItxtP.TabIndex = 24;
+            // 
+            // ItxtTI
+            // 
+            ItxtTI.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ItxtTI.Location = new Point(630, 219);
+            ItxtTI.Name = "ItxtTI";
+            ItxtTI.Size = new Size(135, 23);
+            ItxtTI.TabIndex = 22;
+            // 
+            // ItxtVP
+            // 
+            ItxtVP.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ItxtVP.Location = new Point(268, 222);
+            ItxtVP.Name = "ItxtVP";
+            ItxtVP.Size = new Size(135, 23);
+            ItxtVP.TabIndex = 20;
+            // 
+            // btnCalInteres
+            // 
+            btnCalInteres.FlatAppearance.BorderColor = Color.White;
+            btnCalInteres.FlatAppearance.MouseDownBackColor = Color.White;
+            btnCalInteres.FlatAppearance.MouseOverBackColor = Color.White;
+            btnCalInteres.FlatStyle = FlatStyle.Flat;
+            btnCalInteres.Image = Properties.Resources.calculadora;
+            btnCalInteres.Location = new Point(354, 445);
+            btnCalInteres.Name = "btnCalInteres";
+            btnCalInteres.Size = new Size(193, 66);
+            btnCalInteres.TabIndex = 26;
+            btnCalInteres.UseVisualStyleBackColor = true;
+            btnCalInteres.Click += btnCalInteres_Click;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Century", 12F, FontStyle.Bold);
+            label12.Location = new Point(339, 315);
+            label12.Name = "label12";
+            label12.Size = new Size(77, 20);
+            label12.TabIndex = 25;
+            label12.Text = "Periodo:";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Century", 12F, FontStyle.Bold);
+            label13.Location = new Point(481, 222);
+            label13.Name = "label13";
+            label13.Size = new Size(143, 20);
+            label13.TabIndex = 23;
+            label13.Text = "Tasa interes(%):";
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(34, 54, 97);
+            panel3.Controls.Add(pictureBox3);
+            panel3.Controls.Add(label14);
+            panel3.Location = new Point(1, 3);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(871, 53);
+            panel3.TabIndex = 21;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.tasa_de_interes_flotante;
+            pictureBox3.Location = new Point(353, 6);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(41, 35);
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(416, 6);
+            label14.Name = "label14";
+            label14.Size = new Size(101, 32);
+            label14.TabIndex = 1;
+            label14.Text = "Interes";
             // 
             // tabPage2
             // 
@@ -483,122 +483,25 @@
             tabPage2.Text = "Valor Presente";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // pictureBox7
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Century", 12F, FontStyle.Bold);
-            label8.Location = new Point(136, 197);
-            label8.Name = "label8";
-            label8.Size = new Size(117, 20);
-            label8.TabIndex = 11;
-            label8.Text = "Valor futuro:";
+            pictureBox7.Image = Properties.Resources.formulaVPIS;
+            pictureBox7.Location = new Point(656, 71);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(159, 70);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 22;
+            pictureBox7.TabStop = false;
             // 
-            // panel2
+            // label28
             // 
-            panel2.BackColor = Color.FromArgb(140, 140, 188);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Controls.Add(label7);
-            panel2.Location = new Point(1, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(871, 53);
-            panel2.TabIndex = 12;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(355, 6);
-            label7.Name = "label7";
-            label7.Size = new Size(202, 32);
-            label7.TabIndex = 1;
-            label7.Text = "Valor Presente";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.dinero;
-            pictureBox2.Location = new Point(308, 6);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(41, 35);
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Century", 12F, FontStyle.Bold);
-            label6.Location = new Point(472, 199);
-            label6.Name = "label6";
-            label6.Size = new Size(143, 20);
-            label6.TabIndex = 14;
-            label6.Text = "Tasa interes(%):";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Century", 12F, FontStyle.Bold);
-            label5.Location = new Point(330, 292);
-            label5.Name = "label5";
-            label5.Size = new Size(77, 20);
-            label5.TabIndex = 16;
-            label5.Text = "Periodo:";
-            // 
-            // btnCalVP
-            // 
-            btnCalVP.FlatAppearance.BorderColor = Color.White;
-            btnCalVP.FlatAppearance.MouseDownBackColor = Color.White;
-            btnCalVP.FlatAppearance.MouseOverBackColor = Color.White;
-            btnCalVP.FlatStyle = FlatStyle.Flat;
-            btnCalVP.Image = Properties.Resources.calculadora;
-            btnCalVP.Location = new Point(354, 442);
-            btnCalVP.Name = "btnCalVP";
-            btnCalVP.Size = new Size(193, 66);
-            btnCalVP.TabIndex = 17;
-            btnCalVP.UseVisualStyleBackColor = true;
-            btnCalVP.Click += btnCalVP_Click;
-            // 
-            // VPtxtVF
-            // 
-            VPtxtVF.Font = new Font("Century", 12F, FontStyle.Bold);
-            VPtxtVF.Location = new Point(259, 192);
-            VPtxtVF.Name = "VPtxtVF";
-            VPtxtVF.Size = new Size(135, 27);
-            VPtxtVF.TabIndex = 10;
-            // 
-            // VPtxtTI
-            // 
-            VPtxtTI.Font = new Font("Century", 12F, FontStyle.Bold);
-            VPtxtTI.Location = new Point(621, 194);
-            VPtxtTI.Name = "VPtxtTI";
-            VPtxtTI.Size = new Size(135, 27);
-            VPtxtTI.TabIndex = 13;
-            // 
-            // VPtxtP
-            // 
-            VPtxtP.Font = new Font("Century", 12F, FontStyle.Bold);
-            VPtxtP.Location = new Point(413, 289);
-            VPtxtP.Name = "VPtxtP";
-            VPtxtP.Size = new Size(135, 27);
-            VPtxtP.TabIndex = 15;
-            // 
-            // VPtxtResultado
-            // 
-            VPtxtResultado.Font = new Font("Century", 12F, FontStyle.Bold);
-            VPtxtResultado.Location = new Point(656, 458);
-            VPtxtResultado.Name = "VPtxtResultado";
-            VPtxtResultado.ReadOnly = true;
-            VPtxtResultado.Size = new Size(135, 27);
-            VPtxtResultado.TabIndex = 18;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Century", 12F, FontStyle.Bold);
-            label10.Location = new Point(553, 465);
-            label10.Name = "label10";
-            label10.Size = new Size(97, 20);
-            label10.TabIndex = 19;
-            label10.Text = "Resultado:";
+            label28.AutoSize = true;
+            label28.Font = new Font("Century", 12F, FontStyle.Bold);
+            label28.Location = new Point(511, 95);
+            label28.Name = "label28";
+            label28.Size = new Size(139, 20);
+            label28.TabIndex = 21;
+            label28.Text = "Formula usada:";
             // 
             // btnClearVP
             // 
@@ -614,25 +517,122 @@
             btnClearVP.UseVisualStyleBackColor = true;
             btnClearVP.Click += btnClearVP_Click;
             // 
-            // label28
+            // label10
             // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Century", 12F, FontStyle.Bold);
-            label28.Location = new Point(511, 95);
-            label28.Name = "label28";
-            label28.Size = new Size(139, 20);
-            label28.TabIndex = 21;
-            label28.Text = "Formula usada:";
+            label10.AutoSize = true;
+            label10.Font = new Font("Century", 12F, FontStyle.Bold);
+            label10.Location = new Point(553, 465);
+            label10.Name = "label10";
+            label10.Size = new Size(97, 20);
+            label10.TabIndex = 19;
+            label10.Text = "Resultado:";
             // 
-            // pictureBox7
+            // VPtxtResultado
             // 
-            pictureBox7.Image = Properties.Resources.formulaVPIS;
-            pictureBox7.Location = new Point(656, 71);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(159, 70);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 22;
-            pictureBox7.TabStop = false;
+            VPtxtResultado.Font = new Font("Century", 12F, FontStyle.Bold);
+            VPtxtResultado.Location = new Point(656, 458);
+            VPtxtResultado.Name = "VPtxtResultado";
+            VPtxtResultado.ReadOnly = true;
+            VPtxtResultado.Size = new Size(135, 27);
+            VPtxtResultado.TabIndex = 18;
+            // 
+            // VPtxtP
+            // 
+            VPtxtP.Font = new Font("Century", 12F, FontStyle.Bold);
+            VPtxtP.Location = new Point(413, 289);
+            VPtxtP.Name = "VPtxtP";
+            VPtxtP.Size = new Size(135, 27);
+            VPtxtP.TabIndex = 15;
+            // 
+            // VPtxtTI
+            // 
+            VPtxtTI.Font = new Font("Century", 12F, FontStyle.Bold);
+            VPtxtTI.Location = new Point(621, 194);
+            VPtxtTI.Name = "VPtxtTI";
+            VPtxtTI.Size = new Size(135, 27);
+            VPtxtTI.TabIndex = 13;
+            // 
+            // VPtxtVF
+            // 
+            VPtxtVF.Font = new Font("Century", 12F, FontStyle.Bold);
+            VPtxtVF.Location = new Point(259, 192);
+            VPtxtVF.Name = "VPtxtVF";
+            VPtxtVF.Size = new Size(135, 27);
+            VPtxtVF.TabIndex = 10;
+            // 
+            // btnCalVP
+            // 
+            btnCalVP.FlatAppearance.BorderColor = Color.White;
+            btnCalVP.FlatAppearance.MouseDownBackColor = Color.White;
+            btnCalVP.FlatAppearance.MouseOverBackColor = Color.White;
+            btnCalVP.FlatStyle = FlatStyle.Flat;
+            btnCalVP.Image = Properties.Resources.calculadora;
+            btnCalVP.Location = new Point(354, 442);
+            btnCalVP.Name = "btnCalVP";
+            btnCalVP.Size = new Size(193, 66);
+            btnCalVP.TabIndex = 17;
+            btnCalVP.UseVisualStyleBackColor = true;
+            btnCalVP.Click += btnCalVP_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Century", 12F, FontStyle.Bold);
+            label5.Location = new Point(330, 292);
+            label5.Name = "label5";
+            label5.Size = new Size(77, 20);
+            label5.TabIndex = 16;
+            label5.Text = "Periodo:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Century", 12F, FontStyle.Bold);
+            label6.Location = new Point(472, 199);
+            label6.Name = "label6";
+            label6.Size = new Size(143, 20);
+            label6.TabIndex = 14;
+            label6.Text = "Tasa interes(%):";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(140, 140, 188);
+            panel2.Controls.Add(pictureBox2);
+            panel2.Controls.Add(label7);
+            panel2.Location = new Point(1, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(871, 53);
+            panel2.TabIndex = 12;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.dinero;
+            pictureBox2.Location = new Point(308, 6);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(41, 35);
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(355, 6);
+            label7.Name = "label7";
+            label7.Size = new Size(202, 32);
+            label7.TabIndex = 1;
+            label7.Text = "Valor Presente";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century", 12F, FontStyle.Bold);
+            label8.Location = new Point(136, 197);
+            label8.Name = "label8";
+            label8.Size = new Size(117, 20);
+            label8.TabIndex = 11;
+            label8.Text = "Valor futuro:";
             // 
             // tabPage1
             // 
@@ -658,122 +658,25 @@
             tabPage1.Text = "Valor Futuro";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // pictureBox6
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century", 12F, FontStyle.Bold);
-            label2.Location = new Point(111, 193);
-            label2.Name = "label2";
-            label2.Size = new Size(136, 20);
-            label2.TabIndex = 3;
-            label2.Text = "Valor presente:";
+            pictureBox6.Image = Properties.Resources.FormulaVFIS;
+            pictureBox6.Location = new Point(641, 88);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(159, 47);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 14;
+            pictureBox6.TabStop = false;
             // 
-            // panel1
+            // label27
             // 
-            panel1.BackColor = Color.FromArgb(85, 106, 148);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(-4, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(871, 53);
-            panel1.TabIndex = 4;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(355, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(170, 32);
-            label1.TabIndex = 1;
-            label1.Text = "Valor Futuro";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.dinero;
-            pictureBox1.Location = new Point(308, 6);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(41, 35);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century", 12F, FontStyle.Bold);
-            label3.Location = new Point(458, 198);
-            label3.Name = "label3";
-            label3.Size = new Size(143, 20);
-            label3.TabIndex = 6;
-            label3.Text = "Tasa interes(%):";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Century", 12F, FontStyle.Bold);
-            label4.Location = new Point(316, 291);
-            label4.Name = "label4";
-            label4.Size = new Size(77, 20);
-            label4.TabIndex = 8;
-            label4.Text = "Periodo:";
-            // 
-            // btnCalVF
-            // 
-            btnCalVF.FlatAppearance.BorderColor = Color.White;
-            btnCalVF.FlatAppearance.MouseDownBackColor = Color.White;
-            btnCalVF.FlatAppearance.MouseOverBackColor = Color.White;
-            btnCalVF.FlatStyle = FlatStyle.Flat;
-            btnCalVF.Image = Properties.Resources.calculadora;
-            btnCalVF.Location = new Point(351, 389);
-            btnCalVF.Name = "btnCalVF";
-            btnCalVF.Size = new Size(193, 66);
-            btnCalVF.TabIndex = 9;
-            btnCalVF.UseVisualStyleBackColor = true;
-            btnCalVF.Click += btnCalVF_Click;
-            // 
-            // VFtxtVP
-            // 
-            VFtxtVP.Font = new Font("Century", 12F, FontStyle.Bold);
-            VFtxtVP.Location = new Point(253, 190);
-            VFtxtVP.Name = "VFtxtVP";
-            VFtxtVP.Size = new Size(135, 27);
-            VFtxtVP.TabIndex = 2;
-            // 
-            // VFtxtTI
-            // 
-            VFtxtTI.Font = new Font("Century", 12F, FontStyle.Bold);
-            VFtxtTI.Location = new Point(607, 195);
-            VFtxtTI.Name = "VFtxtTI";
-            VFtxtTI.Size = new Size(135, 27);
-            VFtxtTI.TabIndex = 5;
-            // 
-            // VFtxtPeriodo
-            // 
-            VFtxtPeriodo.Font = new Font("Century", 12F, FontStyle.Bold);
-            VFtxtPeriodo.Location = new Point(399, 288);
-            VFtxtPeriodo.Name = "VFtxtPeriodo";
-            VFtxtPeriodo.Size = new Size(135, 27);
-            VFtxtPeriodo.TabIndex = 7;
-            // 
-            // VFtxtResultado
-            // 
-            VFtxtResultado.Font = new Font("Century", 12F, FontStyle.Bold);
-            VFtxtResultado.Location = new Point(653, 408);
-            VFtxtResultado.Name = "VFtxtResultado";
-            VFtxtResultado.ReadOnly = true;
-            VFtxtResultado.Size = new Size(135, 27);
-            VFtxtResultado.TabIndex = 10;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Century", 12F, FontStyle.Bold);
-            label9.Location = new Point(550, 412);
-            label9.Name = "label9";
-            label9.Size = new Size(97, 20);
-            label9.TabIndex = 11;
-            label9.Text = "Resultado:";
+            label27.AutoSize = true;
+            label27.Font = new Font("Century", 12F, FontStyle.Bold);
+            label27.Location = new Point(496, 101);
+            label27.Name = "label27";
+            label27.Size = new Size(139, 20);
+            label27.TabIndex = 13;
+            label27.Text = "Formula usada:";
             // 
             // btnClearVF
             // 
@@ -789,25 +692,122 @@
             btnClearVF.UseVisualStyleBackColor = true;
             btnClearVF.Click += btnClearVF_Click;
             // 
-            // label27
+            // label9
             // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Century", 12F, FontStyle.Bold);
-            label27.Location = new Point(496, 101);
-            label27.Name = "label27";
-            label27.Size = new Size(139, 20);
-            label27.TabIndex = 13;
-            label27.Text = "Formula usada:";
+            label9.AutoSize = true;
+            label9.Font = new Font("Century", 12F, FontStyle.Bold);
+            label9.Location = new Point(550, 412);
+            label9.Name = "label9";
+            label9.Size = new Size(97, 20);
+            label9.TabIndex = 11;
+            label9.Text = "Resultado:";
             // 
-            // pictureBox6
+            // VFtxtResultado
             // 
-            pictureBox6.Image = Properties.Resources.FormulaVFIS;
-            pictureBox6.Location = new Point(641, 88);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(159, 47);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 14;
-            pictureBox6.TabStop = false;
+            VFtxtResultado.Font = new Font("Century", 12F, FontStyle.Bold);
+            VFtxtResultado.Location = new Point(653, 408);
+            VFtxtResultado.Name = "VFtxtResultado";
+            VFtxtResultado.ReadOnly = true;
+            VFtxtResultado.Size = new Size(135, 27);
+            VFtxtResultado.TabIndex = 10;
+            // 
+            // VFtxtPeriodo
+            // 
+            VFtxtPeriodo.Font = new Font("Century", 12F, FontStyle.Bold);
+            VFtxtPeriodo.Location = new Point(399, 288);
+            VFtxtPeriodo.Name = "VFtxtPeriodo";
+            VFtxtPeriodo.Size = new Size(135, 27);
+            VFtxtPeriodo.TabIndex = 7;
+            // 
+            // VFtxtTI
+            // 
+            VFtxtTI.Font = new Font("Century", 12F, FontStyle.Bold);
+            VFtxtTI.Location = new Point(607, 195);
+            VFtxtTI.Name = "VFtxtTI";
+            VFtxtTI.Size = new Size(135, 27);
+            VFtxtTI.TabIndex = 5;
+            // 
+            // VFtxtVP
+            // 
+            VFtxtVP.Font = new Font("Century", 12F, FontStyle.Bold);
+            VFtxtVP.Location = new Point(253, 190);
+            VFtxtVP.Name = "VFtxtVP";
+            VFtxtVP.Size = new Size(135, 27);
+            VFtxtVP.TabIndex = 2;
+            // 
+            // btnCalVF
+            // 
+            btnCalVF.FlatAppearance.BorderColor = Color.White;
+            btnCalVF.FlatAppearance.MouseDownBackColor = Color.White;
+            btnCalVF.FlatAppearance.MouseOverBackColor = Color.White;
+            btnCalVF.FlatStyle = FlatStyle.Flat;
+            btnCalVF.Image = Properties.Resources.calculadora;
+            btnCalVF.Location = new Point(351, 389);
+            btnCalVF.Name = "btnCalVF";
+            btnCalVF.Size = new Size(193, 66);
+            btnCalVF.TabIndex = 9;
+            btnCalVF.UseVisualStyleBackColor = true;
+            btnCalVF.Click += btnCalVF_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Century", 12F, FontStyle.Bold);
+            label4.Location = new Point(316, 291);
+            label4.Name = "label4";
+            label4.Size = new Size(77, 20);
+            label4.TabIndex = 8;
+            label4.Text = "Periodo:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century", 12F, FontStyle.Bold);
+            label3.Location = new Point(458, 198);
+            label3.Name = "label3";
+            label3.Size = new Size(143, 20);
+            label3.TabIndex = 6;
+            label3.Text = "Tasa interes(%):";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(85, 106, 148);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(-4, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(871, 53);
+            panel1.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.dinero;
+            pictureBox1.Location = new Point(308, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(41, 35);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(355, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(170, 32);
+            label1.TabIndex = 1;
+            label1.Text = "Valor Futuro";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century", 12F, FontStyle.Bold);
+            label2.Location = new Point(111, 193);
+            label2.Name = "label2";
+            label2.Size = new Size(136, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Valor presente:";
             // 
             // tabControl1
             // 
@@ -835,28 +835,28 @@
             Text = "FrmInteresSimple";
             tabPage4.ResumeLayout(false);
             tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             tabControl1.ResumeLayout(false);
             ResumeLayout(false);
         }

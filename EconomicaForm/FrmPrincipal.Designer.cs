@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            btnConversor = new Button();
             btnHome = new Button();
             btnCalendario = new Button();
             btnIE = new Button();
@@ -39,7 +40,6 @@
             panelContenedor = new Panel();
             PBMinimizar = new PictureBox();
             PBCerrar = new PictureBox();
-            btnConversor = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelContenedor.SuspendLayout();
@@ -63,6 +63,24 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(144, 590);
             panel1.TabIndex = 0;
+            // 
+            // btnConversor
+            // 
+            btnConversor.FlatAppearance.BorderColor = Color.FromArgb(17, 53, 149);
+            btnConversor.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 106, 148);
+            btnConversor.FlatAppearance.MouseOverBackColor = Color.FromArgb(85, 106, 148);
+            btnConversor.FlatStyle = FlatStyle.Flat;
+            btnConversor.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnConversor.ForeColor = Color.White;
+            btnConversor.Image = Properties.Resources.signo_de_dolar;
+            btnConversor.ImageAlign = ContentAlignment.MiddleLeft;
+            btnConversor.Location = new Point(0, 529);
+            btnConversor.Name = "btnConversor";
+            btnConversor.Size = new Size(153, 31);
+            btnConversor.TabIndex = 7;
+            btnConversor.Text = "Conversor tasas";
+            btnConversor.UseVisualStyleBackColor = true;
+            btnConversor.Click += btnConversor_Click;
             // 
             // btnHome
             // 
@@ -149,6 +167,7 @@
             btnIC.TabIndex = 2;
             btnIC.Text = "Interes Compuesto";
             btnIC.UseVisualStyleBackColor = true;
+            btnIC.Click += btnIC_Click;
             // 
             // btnIS
             // 
@@ -205,24 +224,6 @@
             PBCerrar.Size = new Size(35, 30);
             PBCerrar.TabIndex = 0;
             PBCerrar.TabStop = false;
-            // 
-            // btnConversor
-            // 
-            btnConversor.FlatAppearance.BorderColor = Color.FromArgb(17, 53, 149);
-            btnConversor.FlatAppearance.MouseDownBackColor = Color.FromArgb(85, 106, 148);
-            btnConversor.FlatAppearance.MouseOverBackColor = Color.FromArgb(85, 106, 148);
-            btnConversor.FlatStyle = FlatStyle.Flat;
-            btnConversor.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnConversor.ForeColor = Color.White;
-            btnConversor.Image = Properties.Resources.signo_de_dolar;
-            btnConversor.ImageAlign = ContentAlignment.MiddleLeft;
-            btnConversor.Location = new Point(0, 529);
-            btnConversor.Name = "btnConversor";
-            btnConversor.Size = new Size(153, 31);
-            btnConversor.TabIndex = 7;
-            btnConversor.Text = "Conversor tasas";
-            btnConversor.UseVisualStyleBackColor = true;
-            btnConversor.Click += btnConversor_Click;
             // 
             // FrmPrincipal
             // 

@@ -110,5 +110,11 @@ namespace EconomicaForm
             var frmConversorTasas = new FrmConversorTasas();
             AbrirFormHija(frmConversorTasas);
         }
+
+        private void btnIC_Click(object sender, EventArgs e)
+        {
+            var frimInteresCompuesto = new FrmInteresCompuesto();
+            AbrirFormHija(frimInteresCompuesto);
+        }
     }
 }

@@ -63,6 +63,26 @@ namespace EconomicaForm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aASDASD {
+            get {
+                object obj = ResourceManager.GetObject("aASDASD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap asdasd {
+            get {
+                object obj = ResourceManager.GetObject("asdasd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap borrar {
             get {
                 object obj = ResourceManager.GetObject("borrar", resourceCulture);
@@ -103,6 +123,16 @@ namespace EconomicaForm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carrito_de_pasteles {
+            get {
+                object obj = ResourceManager.GetObject("carrito-de-pasteles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap copiar_link {
             get {
                 object obj = ResourceManager.GetObject("copiar-link", resourceCulture);
@@ -113,9 +143,39 @@ namespace EconomicaForm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap desktop_ceedea47_27d6_4cce_93ad_1abd8b7b4f6f {
+            get {
+                object obj = ResourceManager.GetObject("desktop_ceedea47-27d6-4cce-93ad-1abd8b7b4f6f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dinero {
             get {
                 object obj = ResourceManager.GetObject("dinero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap economico__1_ {
+            get {
+                object obj = ResourceManager.GetObject("economico (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FFormulaIC {
+            get {
+                object obj = ResourceManager.GetObject("FFormulaIC", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +306,16 @@ namespace EconomicaForm.Properties {
         internal static System.Drawing.Bitmap tasa_de_interes_flotante {
             get {
                 object obj = ResourceManager.GetObject("tasa-de-interes-flotante", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VP {
+            get {
+                object obj = ResourceManager.GetObject("VP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
