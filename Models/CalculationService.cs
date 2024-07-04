@@ -8,94 +8,134 @@ namespace Models
 {
     public class CalculationService : ICalculationService
     {
-        public decimal AnualidadAnticipadaVF(decimal R, decimal tasaInteres, decimal n)
+        public decimal CalcularISValorFuturo(Interes interes)
         {
-            throw new NotImplementedException();
+            return interes.Presente * (1 + (interes.TasaInteres / 100) * interes.Periodo);
         }
 
-        public decimal AnualidadAnticipadaVP(decimal R, decimal tasaInteres, decimal n)
+        public decimal CalcularISValorPresente(Interes interes)
         {
-            throw new NotImplementedException();
+            return interes.Futuro / (1 + (interes.TasaInteres / 100) * interes.Periodo);
         }
 
-        public decimal AnualidadDiferidaVF(decimal R, decimal tasaInteres, decimal n, decimal m)
+        public decimal CalcularISInteres(Interes interes)
         {
-            throw new NotImplementedException();
+            return interes.Presente * (interes.TasaInteres / 100) * interes.Periodo;
         }
 
-        public decimal AnualidadDiferidaVP(decimal R, decimal tasaInteres, decimal n, decimal m)
+        public decimal CalcularISTPeriodo(Interes interes)
         {
-            throw new NotImplementedException();
+            return (interes.Futuro / interes.Presente - 1) / (interes.TasaInteres / 100);
         }
 
-        public decimal AnualidadVencidaVF(decimal R, decimal tasaInteres, decimal n)
+        public decimal CalcularICValorFuturo(Interes interes)
         {
-            throw new NotImplementedException();
+            return interes.Presente * (decimal)Math.Pow((double)(1 + (interes.TasaInteres / 100)), (double)interes.Periodo);
         }
 
-        public decimal AnualidadVencidaVP(decimal R, decimal tasaInteres, decimal n)
+        public decimal CalcularICValorPresente(Interes interes)
         {
-            throw new NotImplementedException();
+            return interes.Futuro / (decimal)Math.Pow((double)(1 + (interes.TasaInteres / 100)), (double)interes.Periodo);
         }
 
-        public decimal CalcularICInteres(decimal perodo, decimal futuro, decimal presente)
+        public decimal CalcularICInteres(Interes interes)
         {
-            throw new NotImplementedException();
+            return CalcularICValorFuturo(interes) - interes.Presente;
         }
 
-        public decimal CalcularICTPeriodo(decimal futuro, decimal presente, decimal interes)
+        public decimal CalcularICTPeriodo(Interes interes)
         {
-            throw new NotImplementedException();
+            return (decimal)(Math.Log((double)(interes.Futuro / interes.Presente)) / Math.Log((double)(1 + (interes.TasaInteres / 100))));
         }
 
-        public decimal calcularICValorFuturo(decimal tasaInteres, decimal presente, decimal periodo)
+        public decimal AnualidadVencidaVP(Anualidad anualidad)
         {
-            throw new NotImplementedException();
+            return anualidad.Monto * (1 - (decimal)Math.Pow((double)(1 + anualidad.TasaInteres / 100), (double)-anualidad.Periodos)) / (anualidad.TasaInteres / 100);
         }
 
-        public decimal CalcularICValorPresente(decimal futuro, decimal tasaInteres, decimal periodo)
+        public decimal AnualidadVencidaVF(Anualidad anualidad)
         {
-            throw new NotImplementedException();
+            return anualidad.Monto * ((decimal)Math.Pow((double)(1 + anualidad.TasaInteres / 100), (double)anualidad.Periodos) - 1) / (anualidad.TasaInteres / 100);
         }
 
-        public decimal CalcularISInteres(decimal presente, decimal tasaInteres, decimal periodo)
+        public decimal AnualidadAnticipadaVP(Anualidad anualidad)
         {
-            throw new NotImplementedException();
+            return AnualidadVencidaVP(anualidad) * (1 + anualidad.TasaInteres / 100);
         }
 
-        public decimal CalcularISTPeriodo(decimal futuro, decimal presente, decimal Tasainteres)
+        public decimal AnualidadAnticipadaVF(Anualidad anualidad)
         {
-            throw new NotImplementedException();
+            return AnualidadVencidaVF(anualidad) * (1 + anualidad.TasaInteres / 100);
         }
 
-        public decimal CalcularISValorFuturo(decimal presente, decimal Tasainteres)
+        public decimal AnualidadDiferidaVP(AnualidadDiferida anualidadDiferida)
         {
-            throw new NotImplementedException();
+            return AnualidadVencidaVP(anualidadDiferida) / (decimal)Math.Pow((double)(1 + anualidadDiferida.TasaInteres / 100), (double)anualidadDiferida.PeriodosDiferimiento);
         }
 
-        public decimal CalcularISValorPresente(decimal futuro, decimal tasaInteres)
+        public decimal AnualidadDiferidaVF(AnualidadDiferida anualidadDiferida)
         {
-            throw new NotImplementedException();
+            return AnualidadVencidaVF(anualidadDiferida) / (decimal)Math.Pow((double)(1 + anualidadDiferida.TasaInteres / 100), (double)anualidadDiferida.PeriodosDiferimiento);
         }
 
-        public decimal CalcularTIR(decimal inversionInicial, decimal[] flujosDeCaja)
+        public decimal CalcularTMAR(Tmar tmar)
         {
-            throw new NotImplementedException();
+            return tmar.TasaLibreDeRiesgo + tmar.PrimaDeRiesgo;
         }
 
-        public decimal CalcularTMAR(decimal tasaLibreDeRiesgo, decimal primaDeRiesgo)
+        public decimal CalcularTIR(Inversion inversion)
         {
-            throw new NotImplementedException();
+            Func<decimal, decimal> npv = r => inversion.InversionInicial + inversion.FlujosDeCaja.Select((cashflow, t) => cashflow / (decimal)Math.Pow((double)(1 + r), t + 1)).Sum();
+            decimal lowerBound = 0m;
+            decimal upperBound = 1m;
+            while (npv(upperBound) > 0)
+            {
+                lowerBound = upperBound;
+                upperBound *= 2;
+            }
+            for (int i = 0; i < 100; i++)
+            {
+                decimal mid = (lowerBound + upperBound) / 2;
+                decimal npvMid = npv(mid);
+                if (Math.Abs(npvMid) < 0.0001m)
+                {
+                    return mid * 100;
+                }
+                if (npvMid > 0)
+                {
+                    lowerBound = mid;
+                }
+                else
+                {
+                    upperBound = mid;
+                }
+            }
+            return lowerBound * 100;
         }
 
-        public decimal CalcularVPN(decimal inversionInicial, decimal[] flujosDeCaja, decimal tasaDescuento)
+        public decimal CalcularVPN(Inversion inversion)
         {
-            throw new NotImplementedException();
+            return inversion.InversionInicial + inversion.FlujosDeCaja.Select((cashflow, t) => cashflow / (decimal)Math.Pow((double)(1 + inversion.TasaDescuento / 100), t + 1)).Sum();
         }
 
-        public List<Pago> GenerarCalendarioDePagos(decimal montoPrestamo, decimal tasaInteresAnual, int numeroPeriodos)
+        public List<Pago> GenerarCalendarioDePagos(Prestamo prestamo)
         {
-            throw new NotImplementedException();
+            List<Pago> calendario = new List<Pago>();
+            decimal tasaInteresMensual = prestamo.TasaInteresAnual / 12 / 100;
+            decimal pagoMensual = prestamo.Monto * tasaInteresMensual / (1 - (decimal)Math.Pow((double)(1 + tasaInteresMensual), -prestamo.NumeroPeriodos));
+            decimal saldo = prestamo.Monto;
+
+            for (int i = 1; i <= prestamo.NumeroPeriodos; i++)
+            {
+                decimal interes = saldo * tasaInteresMensual;
+                decimal principal = pagoMensual - interes;
+                saldo -= principal;
+                calendario.Add(new Pago { Periodo = i, Interes = interes, Principal = principal, Cuota = pagoMensual, Saldo = saldo });
+            }
+
+            return calendario;
         }
+
+
     }
 }

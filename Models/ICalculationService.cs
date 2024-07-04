@@ -8,23 +8,23 @@ namespace Models
 {
     public interface ICalculationService
     {
-        decimal CalcularISValorFuturo(decimal presente, decimal Tasainteres);
-        decimal CalcularISValorPresente(decimal futuro, decimal tasaInteres);
-        decimal CalcularISInteres(decimal presente, decimal  tasaInteres, decimal periodo);
-        decimal CalcularISTPeriodo(decimal futuro, decimal presente, decimal Tasainteres);
-        decimal calcularICValorFuturo(decimal tasaInteres, decimal presente, decimal periodo);
-        decimal CalcularICValorPresente(decimal futuro, decimal tasaInteres, decimal periodo);
-        decimal CalcularICInteres(decimal perodo, decimal futuro, decimal presente);
-        decimal CalcularICTPeriodo(decimal futuro, decimal presente, decimal interes);
-        decimal AnualidadVencidaVP(decimal R, decimal tasaInteres, decimal n);
-        decimal AnualidadVencidaVF(decimal R, decimal tasaInteres, decimal n);
-        decimal AnualidadAnticipadaVP(decimal R, decimal tasaInteres, decimal n);
-        decimal AnualidadAnticipadaVF(decimal R, decimal tasaInteres, decimal n);
-        decimal AnualidadDiferidaVP(decimal R, decimal tasaInteres, decimal n, decimal m);
-        decimal AnualidadDiferidaVF(decimal R, decimal tasaInteres, decimal n, decimal m);
-        decimal CalcularTMAR(decimal tasaLibreDeRiesgo, decimal primaDeRiesgo);
-        decimal CalcularTIR(decimal inversionInicial, decimal[] flujosDeCaja);
-        decimal CalcularVPN(decimal inversionInicial, decimal[] flujosDeCaja, decimal tasaDescuento);
-        List<Pago> GenerarCalendarioDePagos(decimal montoPrestamo, decimal tasaInteresAnual, int numeroPeriodos);
+        decimal CalcularISValorFuturo(Interes interes);
+        decimal CalcularISValorPresente(Interes interes);
+        decimal CalcularISInteres(Interes interes);
+        decimal CalcularISTPeriodo(Interes interes);
+        decimal CalcularICValorFuturo(Interes interes);
+        decimal CalcularICValorPresente(Interes interes);
+        decimal CalcularICInteres(Interes interes);
+        decimal CalcularICTPeriodo(Interes interes);
+        decimal AnualidadVencidaVP(Anualidad anualidad);
+        decimal AnualidadVencidaVF(Anualidad anualidad);
+        decimal AnualidadAnticipadaVP(Anualidad anualidad);
+        decimal AnualidadAnticipadaVF(Anualidad anualidad);
+        decimal AnualidadDiferidaVP(AnualidadDiferida anualidadDiferida);
+        decimal AnualidadDiferidaVF(AnualidadDiferida anualidadDiferida);
+        decimal CalcularTMAR(Tmar tmar);
+        decimal CalcularTIR(Inversion inversion);
+        decimal CalcularVPN(Inversion inversion);
+        List<Pago> GenerarCalendarioDePagos(Prestamo prestamo);
     }
 }
