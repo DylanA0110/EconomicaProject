@@ -58,6 +58,14 @@ namespace EconomicaForm
                 {
                     dataGridView1.Rows.Add(pago.Periodo, pago.Principal.ToString("N2"), pago.Interes.ToString("N2"), pago.Cuota.ToString("N2"), pago.Saldo.ToString("N2"));
                 }
+                if (calendarioDePagos[0].Periodo == 0)
+                {
+                    Console.WriteLine("Period 0 is correctly added to the list.");
+                }
+                else
+                {
+                    Console.WriteLine("Period 0 is missing from the list.");
+                }
             }
             catch (Exception ex)
             {

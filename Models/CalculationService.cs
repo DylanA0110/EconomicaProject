@@ -268,16 +268,13 @@ namespace Models
 
         public List<Pago> GenerarCalendarioDePagos(Prestamo prestamo)
         {
-            // Fórmulas:
-            // 1. Pago Mensual: PMT = P * i_m / (1 - (1 + i_m)^-n)
-            // 2. Interés: I_t = S_{t-1} * i_m
-            // 3. Principal: Principal = PMT - I_t
-            // 4. Saldo: S_t = S_{t-1} - Principal
-
             List<Pago> calendario = new List<Pago>();
             decimal tasaInteresMensual = prestamo.TasaInteresAnual / 12 / 100;
             decimal pagoMensual = prestamo.Monto * tasaInteresMensual / (1 - (decimal)Math.Pow((double)(1 + tasaInteresMensual), -prestamo.NumeroPeriodos));
             decimal saldo = prestamo.Monto;
+
+            // Agregar el período 0 con todos los valores en cero excepto el saldo original
+            calendario.Add(new Pago { Periodo = 0, Interes = 0, Principal = 0, Cuota = 0, Saldo = prestamo.Monto });
 
             for (int i = 1; i <= prestamo.NumeroPeriodos; i++)
             {
@@ -297,5 +294,7 @@ namespace Models
 
             return calendario;
         }
+
+
     }
 }
