@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             panel1 = new Panel();
             btnConversor = new Button();
             btnHome = new Button();
@@ -208,7 +209,7 @@
             panelContenedor.Location = new Point(144, 0);
             panelContenedor.Name = "panelContenedor";
             panelContenedor.Size = new Size(875, 590);
-            panelContenedor.TabIndex = 1;
+            panelContenedor.TabIndex = 2;
             // 
             // PBMinimizar
             // 
@@ -237,6 +238,7 @@
             Controls.Add(panelContenedor);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmPrincipal";
             Text = "FrmPrincipal";
             Load += FrmPrincipal_Load;
@@ -258,9 +260,9 @@
         private Button btnAnualidad;
         private Button btnIC;
         private Button btnHome;
-        private Panel panelContenedor;
-        private PictureBox PBCerrar;
-        private PictureBox PBMinimizar;
         private Button btnConversor;
+        private Panel panelContenedor;
+        private PictureBox PBMinimizar;
+        private PictureBox PBCerrar;
     }
 }
