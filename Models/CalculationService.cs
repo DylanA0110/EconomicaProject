@@ -194,6 +194,7 @@ namespace Models
         {
             // Fórmula: Se usa el método de Newton-Raphson para resolver la ecuación NPV = 0
             Func<decimal, decimal> npv = r => inversion.InversionInicial + inversion.FlujosDeCaja.Select((cashflow, t) => cashflow / (decimal)Math.Pow((double)(1 + r), t + 1)).Sum();
+
             decimal lowerBound = 0m;
             decimal upperBound = 1m;
             while (npv(upperBound) > 0)
@@ -201,6 +202,7 @@ namespace Models
                 lowerBound = upperBound;
                 upperBound *= 2;
             }
+
             for (int i = 0; i < 100; i++)
             {
                 decimal mid = (lowerBound + upperBound) / 2;
@@ -218,6 +220,7 @@ namespace Models
                     upperBound = mid;
                 }
             }
+
             return lowerBound * 100;
         }
 

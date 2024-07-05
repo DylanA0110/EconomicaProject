@@ -117,6 +117,9 @@
             label34 = new Label();
             DtxtTasaVF = new TextBox();
             label35 = new Label();
+            btnClearDiferida = new Button();
+            btnClearAnticipada = new Button();
+            btnClearVencida = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -155,6 +158,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(btnClearVencida);
             tabPage1.Controls.Add(groupBox2);
             tabPage1.Controls.Add(groupBox1);
             tabPage1.Controls.Add(panel1);
@@ -168,6 +172,7 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(btnClearAnticipada);
             tabPage2.Controls.Add(groupBox4);
             tabPage2.Controls.Add(groupBox3);
             tabPage2.Controls.Add(panel2);
@@ -181,6 +186,7 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(btnClearDiferida);
             tabPage3.Controls.Add(groupBox6);
             tabPage3.Controls.Add(groupBox5);
             tabPage3.Controls.Add(panel3);
@@ -1084,6 +1090,45 @@
             label35.TabIndex = 7;
             label35.Text = "Tasa interes:";
             // 
+            // btnClearDiferida
+            // 
+            btnClearDiferida.FlatAppearance.BorderColor = Color.White;
+            btnClearDiferida.FlatAppearance.MouseDownBackColor = Color.White;
+            btnClearDiferida.FlatAppearance.MouseOverBackColor = Color.White;
+            btnClearDiferida.FlatStyle = FlatStyle.Flat;
+            btnClearDiferida.Image = Properties.Resources.limpieza;
+            btnClearDiferida.Location = new Point(805, 85);
+            btnClearDiferida.Name = "btnClearDiferida";
+            btnClearDiferida.Size = new Size(52, 42);
+            btnClearDiferida.TabIndex = 25;
+            btnClearDiferida.UseVisualStyleBackColor = true;
+            // 
+            // btnClearAnticipada
+            // 
+            btnClearAnticipada.FlatAppearance.BorderColor = Color.White;
+            btnClearAnticipada.FlatAppearance.MouseDownBackColor = Color.White;
+            btnClearAnticipada.FlatAppearance.MouseOverBackColor = Color.White;
+            btnClearAnticipada.FlatStyle = FlatStyle.Flat;
+            btnClearAnticipada.Image = Properties.Resources.limpieza;
+            btnClearAnticipada.Location = new Point(805, 70);
+            btnClearAnticipada.Name = "btnClearAnticipada";
+            btnClearAnticipada.Size = new Size(52, 42);
+            btnClearAnticipada.TabIndex = 26;
+            btnClearAnticipada.UseVisualStyleBackColor = true;
+            // 
+            // btnClearVencida
+            // 
+            btnClearVencida.FlatAppearance.BorderColor = Color.White;
+            btnClearVencida.FlatAppearance.MouseDownBackColor = Color.White;
+            btnClearVencida.FlatAppearance.MouseOverBackColor = Color.White;
+            btnClearVencida.FlatStyle = FlatStyle.Flat;
+            btnClearVencida.Image = Properties.Resources.limpieza;
+            btnClearVencida.Location = new Point(803, 74);
+            btnClearVencida.Name = "btnClearVencida";
+            btnClearVencida.Size = new Size(52, 42);
+            btnClearVencida.TabIndex = 26;
+            btnClearVencida.UseVisualStyleBackColor = true;
+            // 
             // FrmAnualidades
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1218,5 +1263,8 @@
         private Label label34;
         private TextBox DtxtTasaVF;
         private Label label35;
+        private Button btnClearDiferida;
+        private Button btnClearVencida;
+        private Button btnClearAnticipada;
     }
 }

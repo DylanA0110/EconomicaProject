@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,56 @@ namespace EconomicaForm
 {
     public partial class FrmCalendario : Form
     {
+        private readonly CalculationService _calculationService;
         public FrmCalendario()
         {
             InitializeComponent();
+            _calculationService = new CalculationService();
+        }
+        private void ConfigurarDataGridView()
+        {
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("Periodo", "Periodo");
+            dataGridView1.Columns.Add("Principal", "Principal");
+            dataGridView1.Columns.Add("Interes", "Interés");
+            dataGridView1.Columns.Add("Cuota", "Cuota");
+            dataGridView1.Columns.Add("Saldo", "Saldo");
+        }
+
+        private void FrmCalendario_Load(object sender, EventArgs e)
+        {
+            ConfigurarDataGridView();
+        }
+
+        private void btnGenerarCalendario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal monto = decimal.Parse(txtMonto.Text);
+                decimal tasaInteresAnual = decimal.Parse(txtTasa.Text);
+                int numeroPeriodos = int.Parse(txtPeriodos.Text);
+
+                Prestamo prestamo = new Prestamo
+                {
+                    Monto = monto,
+                    TasaInteresAnual = tasaInteresAnual,
+                    NumeroPeriodos = numeroPeriodos
+                };
+
+                List<Pago> calendarioDePagos = _calculationService.GenerarCalendarioDePagos(prestamo);
+
+                // Limpiar el DataGridView antes de agregar nuevos datos
+                dataGridView1.Rows.Clear();
+
+                foreach (var pago in calendarioDePagos)
+                {
+                    dataGridView1.Rows.Add(pago.Periodo, pago.Principal.ToString("N2"), pago.Interes.ToString("N2"), pago.Cuota.ToString("N2"), pago.Saldo.ToString("N2"));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

@@ -63,6 +63,16 @@ namespace EconomicaForm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _61171134101a578e17966b99_pasted_image_0 {
+            get {
+                object obj = ResourceManager.GetObject("61171134101a578e17966b99_pasted image 0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aASDASD {
             get {
                 object obj = ResourceManager.GetObject("aASDASD", resourceCulture);
@@ -123,9 +133,39 @@ namespace EconomicaForm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calculadora__1_ {
+            get {
+                object obj = ResourceManager.GetObject("calculadora (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendario {
             get {
                 object obj = ResourceManager.GetObject("calendario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendario__1_ {
+            get {
+                object obj = ResourceManager.GetObject("calendario (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendario__2_ {
+            get {
+                object obj = ResourceManager.GetObject("calendario (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +386,26 @@ namespace EconomicaForm.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_07_04_193117 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-07-04 193117", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_04_195120 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-04 195120", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_04_201705 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-04 201705", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

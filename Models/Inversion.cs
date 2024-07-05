@@ -19,5 +19,6 @@ namespace Models
         [Required]
         [Range(0, 100, ErrorMessage = "La tasa de descuento debe estar entre 0 y 100.")]
         public decimal TasaDescuento { get; set; }
+        public int T => FlujosDeCaja.Length - 1;
     }
 }
