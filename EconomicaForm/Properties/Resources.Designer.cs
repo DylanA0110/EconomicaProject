@@ -313,6 +313,46 @@ namespace EconomicaForm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_04_191304 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-04 191304", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_04_191406 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-04 191406", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_04_193036 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-04 193036", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_04_193117 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-04 193117", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap signo_de_dolar {
             get {
                 object obj = ResourceManager.GetObject("signo-de-dolar", resourceCulture);

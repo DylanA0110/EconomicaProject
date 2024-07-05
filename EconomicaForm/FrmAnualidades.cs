@@ -14,7 +14,7 @@ namespace EconomicaForm
             _calculationService = new CalculationService(); // Instancia de CalculationService
         }
 
-        
+
 
         private bool ValidateInputs(params TextBox[] textBoxes)
         {
