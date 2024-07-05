@@ -235,6 +235,8 @@ namespace EconomicaForm
             VtxtMontoVF.Clear();
             VtxtPeriodoVF.Clear();
             vTxtResultadoVF.Clear();
+            VtxtGradienteVP.Clear();
+            VtxtGradienteVF.Clear();
         }
 
         private void btnClearAnticipada_Click(object sender, EventArgs e)
@@ -247,6 +249,8 @@ namespace EconomicaForm
             AtxtMontoVF.Clear();
             AtxtPeriodoVF.Clear();
             AtxtResultadoVF.Clear();
+            AtxtGradienteVP.Clear();
+            AtxtGradienteVF.Clear();
         }
 
         private void btnClearDiferida_Click(object sender, EventArgs e)
@@ -261,6 +265,8 @@ namespace EconomicaForm
             DtxtPeriodoMVF.Clear();
             DtxtPeriodoNVF.Clear();
             DtxtResultadoVF.Clear();
+            DtxtGradienteVP.Clear();
+            DtxtGradienteVF.Clear();
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
