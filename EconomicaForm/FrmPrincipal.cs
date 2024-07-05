@@ -116,5 +116,23 @@ namespace EconomicaForm
             var frimInteresCompuesto = new FrmInteresCompuesto();
             AbrirFormHija(frimInteresCompuesto);
         }
+
+        private void btnAnualidad_Click(object sender, EventArgs e)
+        {
+            var frmAnualidad = new FrmAnualidades();
+            AbrirFormHija(frmAnualidad);
+        }
+
+        private void btnIE_Click(object sender, EventArgs e)
+        {
+            var frmIndicadores = new FrmIndicadores();
+            AbrirFormHija(frmIndicadores);
+        }
+
+        private void btnCalendario_Click(object sender, EventArgs e)
+        {
+            var frmCalendario = new FrmCalendario();
+            AbrirFormHija(frmCalendario);
+        }
     }
 }

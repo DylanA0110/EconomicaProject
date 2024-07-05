@@ -116,6 +116,7 @@
             btnCalendario.TabIndex = 5;
             btnCalendario.Text = "Calendario de pagos";
             btnCalendario.UseVisualStyleBackColor = true;
+            btnCalendario.Click += btnCalendario_Click;
             // 
             // btnIE
             // 
@@ -133,6 +134,7 @@
             btnIE.TabIndex = 4;
             btnIE.Text = "Indicadores Economicos";
             btnIE.UseVisualStyleBackColor = true;
+            btnIE.Click += btnIE_Click;
             // 
             // btnAnualidad
             // 
@@ -150,6 +152,7 @@
             btnAnualidad.TabIndex = 3;
             btnAnualidad.Text = "Anualidades";
             btnAnualidad.UseVisualStyleBackColor = true;
+            btnAnualidad.Click += btnAnualidad_Click;
             // 
             // btnIC
             // 

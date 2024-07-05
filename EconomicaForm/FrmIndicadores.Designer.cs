@@ -30,17 +30,6 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            tabPage2 = new TabPage();
-            panel2 = new Panel();
-            pictureBox4 = new PictureBox();
-            label16 = new Label();
-            tabPage3 = new TabPage();
-            panel3 = new Panel();
-            pictureBox8 = new PictureBox();
-            label28 = new Label();
             pictureBox6 = new PictureBox();
             label27 = new Label();
             btnClearTMAR = new Button();
@@ -51,18 +40,26 @@
             btnCalTMAR = new Button();
             label3 = new Label();
             label2 = new Label();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            tabPage2 = new TabPage();
+            btnCalTIR = new Button();
+            txtTIR = new TextBox();
+            label8 = new Label();
+            dataGridView1 = new DataGridView();
+            btnEliminarFlujo = new Button();
+            btnAgregarFlujo = new Button();
+            tirtxtInversion = new TextBox();
+            label6 = new Label();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             tirTxtTasa = new TextBox();
             label5 = new Label();
-            tirtxtInversion = new TextBox();
-            label6 = new Label();
-            btnAgregarFlujo = new Button();
-            btnEliminarFlujo = new Button();
-            dataGridView1 = new DataGridView();
-            txtTIR = new TextBox();
-            label8 = new Label();
-            btnCalTIR = new Button();
+            panel2 = new Panel();
+            pictureBox4 = new PictureBox();
+            label16 = new Label();
+            tabPage3 = new TabPage();
             btnCalcularVPN = new Button();
             txtVPN = new TextBox();
             label7 = new Label();
@@ -75,21 +72,24 @@
             label11 = new Label();
             VPNtxtTasa = new TextBox();
             label12 = new Label();
+            panel3 = new Panel();
+            pictureBox8 = new PictureBox();
+            label28 = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             tabPage3.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -124,142 +124,6 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "TMAR";
             tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(255, 206, 51);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(0, 6);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(874, 53);
-            panel1.TabIndex = 5;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.dinero;
-            pictureBox1.Location = new Point(308, 6);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(41, 35);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(355, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(204, 32);
-            label1.TabIndex = 1;
-            label1.Text = "Calcular TMAR";
-            // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(btnCalTIR);
-            tabPage2.Controls.Add(txtTIR);
-            tabPage2.Controls.Add(label8);
-            tabPage2.Controls.Add(dataGridView1);
-            tabPage2.Controls.Add(btnEliminarFlujo);
-            tabPage2.Controls.Add(btnAgregarFlujo);
-            tabPage2.Controls.Add(tirtxtInversion);
-            tabPage2.Controls.Add(label6);
-            tabPage2.Controls.Add(pictureBox2);
-            tabPage2.Controls.Add(label4);
-            tabPage2.Controls.Add(tirTxtTasa);
-            tabPage2.Controls.Add(label5);
-            tabPage2.Controls.Add(panel2);
-            tabPage2.Location = new Point(4, 25);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(867, 533);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "TIR";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(24, 136, 172);
-            panel2.Controls.Add(pictureBox4);
-            panel2.Controls.Add(label16);
-            panel2.Location = new Point(0, 6);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(874, 53);
-            panel2.TabIndex = 12;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.dinero;
-            pictureBox4.Location = new Point(308, 6);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(41, 35);
-            pictureBox4.TabIndex = 2;
-            pictureBox4.TabStop = false;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(355, 6);
-            label16.Name = "label16";
-            label16.Size = new Size(168, 32);
-            label16.TabIndex = 1;
-            label16.Text = "Calcular TIR";
-            // 
-            // tabPage3
-            // 
-            tabPage3.Controls.Add(btnCalcularVPN);
-            tabPage3.Controls.Add(txtVPN);
-            tabPage3.Controls.Add(label7);
-            tabPage3.Controls.Add(dataGridView2);
-            tabPage3.Controls.Add(btnEliminarFlujo2);
-            tabPage3.Controls.Add(btnAgregarFlujo2);
-            tabPage3.Controls.Add(VPNtxtInvesion);
-            tabPage3.Controls.Add(label10);
-            tabPage3.Controls.Add(pictureBox3);
-            tabPage3.Controls.Add(label11);
-            tabPage3.Controls.Add(VPNtxtTasa);
-            tabPage3.Controls.Add(label12);
-            tabPage3.Controls.Add(panel3);
-            tabPage3.Location = new Point(4, 25);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(867, 533);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "VPN";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = SystemColors.ScrollBar;
-            panel3.Controls.Add(pictureBox8);
-            panel3.Controls.Add(label28);
-            panel3.Location = new Point(0, 6);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(874, 53);
-            panel3.TabIndex = 14;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = Properties.Resources.dinero;
-            pictureBox8.Location = new Point(308, 6);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(41, 35);
-            pictureBox8.TabIndex = 2;
-            pictureBox8.TabStop = false;
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label28.ForeColor = Color.White;
-            label28.Location = new Point(355, 6);
-            label28.Name = "label28";
-            label28.Size = new Size(187, 32);
-            label28.TabIndex = 1;
-            label28.Text = "Calcular VPN";
             // 
             // pictureBox6
             // 
@@ -341,6 +205,7 @@
             btnCalTMAR.Size = new Size(193, 66);
             btnCalTMAR.TabIndex = 21;
             btnCalTMAR.UseVisualStyleBackColor = true;
+            btnCalTMAR.Click += btnCalTMAR_Click;
             // 
             // label3
             // 
@@ -361,6 +226,151 @@
             label2.Size = new Size(177, 20);
             label2.TabIndex = 16;
             label2.Text = "Tasa libre de riesgo:";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(255, 206, 51);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(0, 6);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(874, 53);
+            panel1.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.dinero;
+            pictureBox1.Location = new Point(308, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(41, 35);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(355, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(204, 32);
+            label1.TabIndex = 1;
+            label1.Text = "Calcular TMAR";
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(btnCalTIR);
+            tabPage2.Controls.Add(txtTIR);
+            tabPage2.Controls.Add(label8);
+            tabPage2.Controls.Add(dataGridView1);
+            tabPage2.Controls.Add(btnEliminarFlujo);
+            tabPage2.Controls.Add(btnAgregarFlujo);
+            tabPage2.Controls.Add(tirtxtInversion);
+            tabPage2.Controls.Add(label6);
+            tabPage2.Controls.Add(pictureBox2);
+            tabPage2.Controls.Add(label4);
+            tabPage2.Controls.Add(tirTxtTasa);
+            tabPage2.Controls.Add(label5);
+            tabPage2.Controls.Add(panel2);
+            tabPage2.Location = new Point(4, 25);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(867, 533);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "TIR";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnCalTIR
+            // 
+            btnCalTIR.FlatAppearance.BorderColor = Color.White;
+            btnCalTIR.FlatAppearance.MouseDownBackColor = Color.LightGray;
+            btnCalTIR.FlatAppearance.MouseOverBackColor = Color.LightGray;
+            btnCalTIR.FlatStyle = FlatStyle.Flat;
+            btnCalTIR.Image = Properties.Resources.calculadora__1_;
+            btnCalTIR.Location = new Point(725, 196);
+            btnCalTIR.Name = "btnCalTIR";
+            btnCalTIR.Size = new Size(95, 44);
+            btnCalTIR.TabIndex = 28;
+            btnCalTIR.UseVisualStyleBackColor = true;
+            btnCalTIR.Click += btnCalTIR_Click;
+            // 
+            // txtTIR
+            // 
+            txtTIR.Font = new Font("Century", 12F, FontStyle.Bold);
+            txtTIR.Location = new Point(702, 86);
+            txtTIR.Name = "txtTIR";
+            txtTIR.ReadOnly = true;
+            txtTIR.ShortcutsEnabled = false;
+            txtTIR.Size = new Size(135, 27);
+            txtTIR.TabIndex = 26;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century", 12F, FontStyle.Bold);
+            label8.Location = new Point(649, 89);
+            label8.Name = "label8";
+            label8.Size = new Size(47, 20);
+            label8.TabIndex = 27;
+            label8.Text = "TIR:";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(27, 260);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(824, 259);
+            dataGridView1.TabIndex = 25;
+            // 
+            // btnEliminarFlujo
+            // 
+            btnEliminarFlujo.BackColor = Color.Gray;
+            btnEliminarFlujo.FlatAppearance.BorderColor = Color.Gray;
+            btnEliminarFlujo.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
+            btnEliminarFlujo.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
+            btnEliminarFlujo.FlatStyle = FlatStyle.Flat;
+            btnEliminarFlujo.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEliminarFlujo.Location = new Point(217, 211);
+            btnEliminarFlujo.Name = "btnEliminarFlujo";
+            btnEliminarFlujo.Size = new Size(151, 29);
+            btnEliminarFlujo.TabIndex = 24;
+            btnEliminarFlujo.Text = "Eliminar Flujo";
+            btnEliminarFlujo.UseVisualStyleBackColor = false;
+            btnEliminarFlujo.Click += btnEliminarFlujo_Click;
+            // 
+            // btnAgregarFlujo
+            // 
+            btnAgregarFlujo.BackColor = Color.Gray;
+            btnAgregarFlujo.FlatAppearance.BorderColor = Color.Gray;
+            btnAgregarFlujo.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
+            btnAgregarFlujo.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
+            btnAgregarFlujo.FlatStyle = FlatStyle.Flat;
+            btnAgregarFlujo.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAgregarFlujo.Location = new Point(32, 211);
+            btnAgregarFlujo.Name = "btnAgregarFlujo";
+            btnAgregarFlujo.Size = new Size(151, 29);
+            btnAgregarFlujo.TabIndex = 23;
+            btnAgregarFlujo.Text = "Agregar Flujo";
+            btnAgregarFlujo.UseVisualStyleBackColor = false;
+            btnAgregarFlujo.Click += btnAgregarFlujo_Click;
+            // 
+            // tirtxtInversion
+            // 
+            tirtxtInversion.Font = new Font("Century", 12F, FontStyle.Bold);
+            tirtxtInversion.Location = new Point(530, 144);
+            tirtxtInversion.Name = "tirtxtInversion";
+            tirtxtInversion.Size = new Size(135, 27);
+            tirtxtInversion.TabIndex = 19;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Century", 12F, FontStyle.Bold);
+            label6.Location = new Point(381, 147);
+            label6.Name = "label6";
+            label6.Size = new Size(152, 20);
+            label6.TabIndex = 20;
+            label6.Text = "Inversion inicial:";
             // 
             // pictureBox2
             // 
@@ -400,94 +410,58 @@
             label5.TabIndex = 16;
             label5.Text = "Tasa descuento:";
             // 
-            // tirtxtInversion
+            // panel2
             // 
-            tirtxtInversion.Font = new Font("Century", 12F, FontStyle.Bold);
-            tirtxtInversion.Location = new Point(530, 144);
-            tirtxtInversion.Name = "tirtxtInversion";
-            tirtxtInversion.Size = new Size(135, 27);
-            tirtxtInversion.TabIndex = 19;
+            panel2.BackColor = Color.FromArgb(24, 136, 172);
+            panel2.Controls.Add(pictureBox4);
+            panel2.Controls.Add(label16);
+            panel2.Location = new Point(0, 6);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(874, 53);
+            panel2.TabIndex = 12;
             // 
-            // label6
+            // pictureBox4
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Century", 12F, FontStyle.Bold);
-            label6.Location = new Point(381, 147);
-            label6.Name = "label6";
-            label6.Size = new Size(152, 20);
-            label6.TabIndex = 20;
-            label6.Text = "Inversion inicial:";
+            pictureBox4.Image = Properties.Resources.dinero;
+            pictureBox4.Location = new Point(308, 6);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(41, 35);
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
             // 
-            // btnAgregarFlujo
+            // label16
             // 
-            btnAgregarFlujo.BackColor = Color.Gray;
-            btnAgregarFlujo.FlatAppearance.BorderColor = Color.Gray;
-            btnAgregarFlujo.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
-            btnAgregarFlujo.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
-            btnAgregarFlujo.FlatStyle = FlatStyle.Flat;
-            btnAgregarFlujo.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAgregarFlujo.Location = new Point(32, 211);
-            btnAgregarFlujo.Name = "btnAgregarFlujo";
-            btnAgregarFlujo.Size = new Size(151, 29);
-            btnAgregarFlujo.TabIndex = 23;
-            btnAgregarFlujo.Text = "Agregar Flujo";
-            btnAgregarFlujo.UseVisualStyleBackColor = false;
+            label16.AutoSize = true;
+            label16.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(355, 6);
+            label16.Name = "label16";
+            label16.Size = new Size(168, 32);
+            label16.TabIndex = 1;
+            label16.Text = "Calcular TIR";
             // 
-            // btnEliminarFlujo
+            // tabPage3
             // 
-            btnEliminarFlujo.BackColor = Color.Gray;
-            btnEliminarFlujo.FlatAppearance.BorderColor = Color.Gray;
-            btnEliminarFlujo.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
-            btnEliminarFlujo.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
-            btnEliminarFlujo.FlatStyle = FlatStyle.Flat;
-            btnEliminarFlujo.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEliminarFlujo.Location = new Point(217, 211);
-            btnEliminarFlujo.Name = "btnEliminarFlujo";
-            btnEliminarFlujo.Size = new Size(151, 29);
-            btnEliminarFlujo.TabIndex = 24;
-            btnEliminarFlujo.Text = "Eliminar Flujo";
-            btnEliminarFlujo.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(27, 260);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(824, 259);
-            dataGridView1.TabIndex = 25;
-            // 
-            // txtTIR
-            // 
-            txtTIR.Font = new Font("Century", 12F, FontStyle.Bold);
-            txtTIR.Location = new Point(702, 86);
-            txtTIR.Name = "txtTIR";
-            txtTIR.ReadOnly = true;
-            txtTIR.ShortcutsEnabled = false;
-            txtTIR.Size = new Size(135, 27);
-            txtTIR.TabIndex = 26;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Century", 12F, FontStyle.Bold);
-            label8.Location = new Point(649, 89);
-            label8.Name = "label8";
-            label8.Size = new Size(47, 20);
-            label8.TabIndex = 27;
-            label8.Text = "TIR:";
-            // 
-            // btnCalTIR
-            // 
-            btnCalTIR.FlatAppearance.BorderColor = Color.White;
-            btnCalTIR.FlatAppearance.MouseDownBackColor = Color.LightGray;
-            btnCalTIR.FlatAppearance.MouseOverBackColor = Color.LightGray;
-            btnCalTIR.FlatStyle = FlatStyle.Flat;
-            btnCalTIR.Image = Properties.Resources.calculadora__1_;
-            btnCalTIR.Location = new Point(725, 196);
-            btnCalTIR.Name = "btnCalTIR";
-            btnCalTIR.Size = new Size(95, 44);
-            btnCalTIR.TabIndex = 28;
-            btnCalTIR.UseVisualStyleBackColor = true;
+            tabPage3.Controls.Add(btnCalcularVPN);
+            tabPage3.Controls.Add(txtVPN);
+            tabPage3.Controls.Add(label7);
+            tabPage3.Controls.Add(dataGridView2);
+            tabPage3.Controls.Add(btnEliminarFlujo2);
+            tabPage3.Controls.Add(btnAgregarFlujo2);
+            tabPage3.Controls.Add(VPNtxtInvesion);
+            tabPage3.Controls.Add(label10);
+            tabPage3.Controls.Add(pictureBox3);
+            tabPage3.Controls.Add(label11);
+            tabPage3.Controls.Add(VPNtxtTasa);
+            tabPage3.Controls.Add(label12);
+            tabPage3.Controls.Add(panel3);
+            tabPage3.Location = new Point(4, 25);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(867, 533);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "VPN";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnCalcularVPN
             // 
@@ -501,6 +475,7 @@
             btnCalcularVPN.Size = new Size(95, 44);
             btnCalcularVPN.TabIndex = 40;
             btnCalcularVPN.UseVisualStyleBackColor = true;
+            btnCalcularVPN.Click += btnCalcularVPN_Click;
             // 
             // txtVPN
             // 
@@ -544,6 +519,7 @@
             btnEliminarFlujo2.TabIndex = 36;
             btnEliminarFlujo2.Text = "Eliminar Flujo";
             btnEliminarFlujo2.UseVisualStyleBackColor = false;
+            btnEliminarFlujo2.Click += btnEliminarFlujo2_Click;
             // 
             // btnAgregarFlujo2
             // 
@@ -559,6 +535,7 @@
             btnAgregarFlujo2.TabIndex = 35;
             btnAgregarFlujo2.Text = "Agregar Flujo";
             btnAgregarFlujo2.UseVisualStyleBackColor = false;
+            btnAgregarFlujo2.Click += btnAgregarFlujo2_Click;
             // 
             // VPNtxtInvesion
             // 
@@ -616,6 +593,36 @@
             label12.TabIndex = 30;
             label12.Text = "Tasa descuento:";
             // 
+            // panel3
+            // 
+            panel3.BackColor = SystemColors.ScrollBar;
+            panel3.Controls.Add(pictureBox8);
+            panel3.Controls.Add(label28);
+            panel3.Location = new Point(0, 6);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(874, 53);
+            panel3.TabIndex = 14;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = Properties.Resources.dinero;
+            pictureBox8.Location = new Point(308, 6);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(41, 35);
+            pictureBox8.TabIndex = 2;
+            pictureBox8.TabStop = false;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label28.ForeColor = Color.White;
+            label28.Location = new Point(355, 6);
+            label28.Name = "label28";
+            label28.Size = new Size(187, 32);
+            label28.TabIndex = 1;
+            label28.Text = "Calcular VPN";
+            // 
             // FrmIndicadores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -628,24 +635,24 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
