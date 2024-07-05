@@ -192,44 +192,76 @@ namespace Models
 
         public decimal CalcularTIR(Inversion inversion)
         {
-            // Fórmula: Se usa el método de Newton-Raphson para resolver la ecuación NPV = 0
-            Func<decimal, decimal> npv = r => inversion.InversionInicial + inversion.FlujosDeCaja.Select((cashflow, t) => cashflow / (decimal)Math.Pow((double)(1 + r), t + 1)).Sum();
-
-            decimal lowerBound = 0m;
-            decimal upperBound = 1m;
-            while (npv(upperBound) > 0)
+            if (inversion.FlujosDeCaja == null || inversion.FlujosDeCaja.Length == 0)
             {
-                lowerBound = upperBound;
-                upperBound *= 2;
+                throw new ArgumentException("Debe proporcionar al menos un flujo de caja.");
             }
 
-            for (int i = 0; i < 100; i++)
+            decimal[] flujosDeCaja = inversion.FlujosDeCaja;
+            decimal inversionInicial = inversion.InversionInicial;
+            decimal tasaDescuento = inversion.TasaDescuento;
+
+            decimal CalcularValorPresente(decimal tasa)
             {
-                decimal mid = (lowerBound + upperBound) / 2;
-                decimal npvMid = npv(mid);
-                if (Math.Abs(npvMid) < 0.0001m)
+                decimal resultado = -inversionInicial;
+                for (int i = 0; i < flujosDeCaja.Length; i++)
                 {
-                    return mid * 100;
+                    resultado += flujosDeCaja[i] / (decimal)Math.Pow((double)(1 + tasa), i + 1);
                 }
-                if (npvMid > 0)
+                return resultado;
+            }
+
+            // Método de bisección para encontrar la TIR
+            decimal tasaInferior = 0.0m;
+            decimal tasaSuperior = 1.0m;
+            decimal TIR = 0.0m;
+            int maxIteraciones = 1000;
+            decimal tolerancia = 0.0001m;
+
+            for (int i = 0; i < maxIteraciones; i++)
+            {
+                TIR = (tasaInferior + tasaSuperior) / 2;
+                decimal valorPresenteNeto = CalcularValorPresente(TIR);
+
+                if (Math.Abs(valorPresenteNeto) < tolerancia)
                 {
-                    lowerBound = mid;
+                    break;
+                }
+                else if (valorPresenteNeto > 0)
+                {
+                    tasaInferior = TIR;
                 }
                 else
                 {
-                    upperBound = mid;
+                    tasaSuperior = TIR;
                 }
             }
 
-            return lowerBound * 100;
+            return TIR * 100;
         }
+
 
         // Valor Presente Neto (VPN)
 
         public decimal CalcularVPN(Inversion inversion)
         {
-            // Fórmula: VPN = I_0 + Σ(CF_t / (1 + i)^t)
-            return inversion.InversionInicial + inversion.FlujosDeCaja.Select((cashflow, t) => cashflow / (decimal)Math.Pow((double)(1 + inversion.TasaDescuento / 100), t + 1)).Sum();
+            if (inversion.FlujosDeCaja == null || inversion.FlujosDeCaja.Length == 0)
+            {
+                throw new ArgumentException("Debe proporcionar al menos un flujo de caja.");
+            }
+
+            decimal[] flujosDeCaja = inversion.FlujosDeCaja;
+            decimal inversionInicial = inversion.InversionInicial;
+            decimal tasaDescuento = inversion.TasaDescuento;
+
+            decimal vpn = -inversionInicial;
+
+            for (int i = 0; i < flujosDeCaja.Length; i++)
+            {
+                vpn += flujosDeCaja[i] / (decimal)Math.Pow((double)(1 + tasaDescuento), i + 1);
+            }
+
+            return vpn;
         }
 
         // Generación de Calendario de Pagos de un Préstamo

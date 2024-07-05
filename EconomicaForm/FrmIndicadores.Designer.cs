@@ -44,12 +44,15 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             tabPage2 = new TabPage();
+            button1 = new Button();
+            txtFlujo1 = new TextBox();
+            label13 = new Label();
+            btnClearTIR = new Button();
             btnCalTIR = new Button();
             txtTIR = new TextBox();
             label8 = new Label();
             dataGridView1 = new DataGridView();
             btnEliminarFlujo = new Button();
-            btnAgregarFlujo = new Button();
             tirtxtInversion = new TextBox();
             label6 = new Label();
             pictureBox2 = new PictureBox();
@@ -60,12 +63,15 @@
             pictureBox4 = new PictureBox();
             label16 = new Label();
             tabPage3 = new TabPage();
+            button2 = new Button();
+            txtFlujo2 = new TextBox();
+            label14 = new Label();
+            btnClearVPN = new Button();
             btnCalcularVPN = new Button();
             txtVPN = new TextBox();
             label7 = new Label();
             dataGridView2 = new DataGridView();
             btnEliminarFlujo2 = new Button();
-            btnAgregarFlujo2 = new Button();
             VPNtxtInvesion = new TextBox();
             label10 = new Label();
             pictureBox3 = new PictureBox();
@@ -157,6 +163,7 @@
             btnClearTMAR.Size = new Size(52, 42);
             btnClearTMAR.TabIndex = 24;
             btnClearTMAR.UseVisualStyleBackColor = true;
+            btnClearTMAR.Click += btnClearTMAR_Click;
             // 
             // label9
             // 
@@ -259,12 +266,15 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(button1);
+            tabPage2.Controls.Add(txtFlujo1);
+            tabPage2.Controls.Add(label13);
+            tabPage2.Controls.Add(btnClearTIR);
             tabPage2.Controls.Add(btnCalTIR);
             tabPage2.Controls.Add(txtTIR);
             tabPage2.Controls.Add(label8);
             tabPage2.Controls.Add(dataGridView1);
             tabPage2.Controls.Add(btnEliminarFlujo);
-            tabPage2.Controls.Add(btnAgregarFlujo);
             tabPage2.Controls.Add(tirtxtInversion);
             tabPage2.Controls.Add(label6);
             tabPage2.Controls.Add(pictureBox2);
@@ -280,6 +290,54 @@
             tabPage2.Text = "TIR";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Gray;
+            button1.FlatAppearance.BorderColor = Color.Gray;
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(474, 205);
+            button1.Name = "button1";
+            button1.Size = new Size(71, 29);
+            button1.TabIndex = 32;
+            button1.Text = "Flujo";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += btnAgregarFlujoIndividual_Click;
+            // 
+            // txtFlujo1
+            // 
+            txtFlujo1.Font = new Font("Century", 12F, FontStyle.Bold);
+            txtFlujo1.Location = new Point(325, 207);
+            txtFlujo1.Name = "txtFlujo1";
+            txtFlujo1.Size = new Size(135, 27);
+            txtFlujo1.TabIndex = 30;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Century", 12F, FontStyle.Bold);
+            label13.Location = new Point(248, 214);
+            label13.Name = "label13";
+            label13.Size = new Size(58, 20);
+            label13.TabIndex = 31;
+            label13.Text = "Flujo:";
+            // 
+            // btnClearTIR
+            // 
+            btnClearTIR.FlatAppearance.BorderColor = Color.White;
+            btnClearTIR.FlatAppearance.MouseDownBackColor = Color.White;
+            btnClearTIR.FlatAppearance.MouseOverBackColor = Color.White;
+            btnClearTIR.FlatStyle = FlatStyle.Flat;
+            btnClearTIR.Image = Properties.Resources.limpieza;
+            btnClearTIR.Location = new Point(739, 129);
+            btnClearTIR.Name = "btnClearTIR";
+            btnClearTIR.Size = new Size(52, 42);
+            btnClearTIR.TabIndex = 29;
+            btnClearTIR.UseVisualStyleBackColor = true;
+            btnClearTIR.Click += btnClearTIR_Click;
+            // 
             // btnCalTIR
             // 
             btnCalTIR.FlatAppearance.BorderColor = Color.White;
@@ -287,7 +345,7 @@
             btnCalTIR.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnCalTIR.FlatStyle = FlatStyle.Flat;
             btnCalTIR.Image = Properties.Resources.calculadora__1_;
-            btnCalTIR.Location = new Point(725, 196);
+            btnCalTIR.Location = new Point(756, 196);
             btnCalTIR.Name = "btnCalTIR";
             btnCalTIR.Size = new Size(95, 44);
             btnCalTIR.TabIndex = 28;
@@ -330,29 +388,13 @@
             btnEliminarFlujo.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btnEliminarFlujo.FlatStyle = FlatStyle.Flat;
             btnEliminarFlujo.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEliminarFlujo.Location = new Point(217, 211);
+            btnEliminarFlujo.Location = new Point(42, 211);
             btnEliminarFlujo.Name = "btnEliminarFlujo";
             btnEliminarFlujo.Size = new Size(151, 29);
             btnEliminarFlujo.TabIndex = 24;
             btnEliminarFlujo.Text = "Eliminar Flujo";
             btnEliminarFlujo.UseVisualStyleBackColor = false;
-            btnEliminarFlujo.Click += btnEliminarFlujo_Click;
-            // 
-            // btnAgregarFlujo
-            // 
-            btnAgregarFlujo.BackColor = Color.Gray;
-            btnAgregarFlujo.FlatAppearance.BorderColor = Color.Gray;
-            btnAgregarFlujo.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
-            btnAgregarFlujo.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
-            btnAgregarFlujo.FlatStyle = FlatStyle.Flat;
-            btnAgregarFlujo.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAgregarFlujo.Location = new Point(32, 211);
-            btnAgregarFlujo.Name = "btnAgregarFlujo";
-            btnAgregarFlujo.Size = new Size(151, 29);
-            btnAgregarFlujo.TabIndex = 23;
-            btnAgregarFlujo.Text = "Agregar Flujo";
-            btnAgregarFlujo.UseVisualStyleBackColor = false;
-            btnAgregarFlujo.Click += btnAgregarFlujo_Click;
+            btnEliminarFlujo.Click += btnEliminarFlujo1_Click;
             // 
             // tirtxtInversion
             // 
@@ -442,12 +484,15 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(button2);
+            tabPage3.Controls.Add(txtFlujo2);
+            tabPage3.Controls.Add(label14);
+            tabPage3.Controls.Add(btnClearVPN);
             tabPage3.Controls.Add(btnCalcularVPN);
             tabPage3.Controls.Add(txtVPN);
             tabPage3.Controls.Add(label7);
             tabPage3.Controls.Add(dataGridView2);
             tabPage3.Controls.Add(btnEliminarFlujo2);
-            tabPage3.Controls.Add(btnAgregarFlujo2);
             tabPage3.Controls.Add(VPNtxtInvesion);
             tabPage3.Controls.Add(label10);
             tabPage3.Controls.Add(pictureBox3);
@@ -462,6 +507,55 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "VPN";
             tabPage3.UseVisualStyleBackColor = true;
+            tabPage3.Click += tabPage3_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Gray;
+            button2.FlatAppearance.BorderColor = Color.Gray;
+            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(483, 206);
+            button2.Name = "button2";
+            button2.Size = new Size(71, 29);
+            button2.TabIndex = 44;
+            button2.Text = "Flujo";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // txtFlujo2
+            // 
+            txtFlujo2.Font = new Font("Century", 12F, FontStyle.Bold);
+            txtFlujo2.Location = new Point(330, 206);
+            txtFlujo2.Name = "txtFlujo2";
+            txtFlujo2.Size = new Size(135, 27);
+            txtFlujo2.TabIndex = 42;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Century", 12F, FontStyle.Bold);
+            label14.Location = new Point(253, 213);
+            label14.Name = "label14";
+            label14.Size = new Size(58, 20);
+            label14.TabIndex = 43;
+            label14.Text = "Flujo:";
+            // 
+            // btnClearVPN
+            // 
+            btnClearVPN.FlatAppearance.BorderColor = Color.White;
+            btnClearVPN.FlatAppearance.MouseDownBackColor = Color.White;
+            btnClearVPN.FlatAppearance.MouseOverBackColor = Color.White;
+            btnClearVPN.FlatStyle = FlatStyle.Flat;
+            btnClearVPN.Image = Properties.Resources.limpieza;
+            btnClearVPN.Location = new Point(729, 123);
+            btnClearVPN.Name = "btnClearVPN";
+            btnClearVPN.Size = new Size(52, 42);
+            btnClearVPN.TabIndex = 41;
+            btnClearVPN.UseVisualStyleBackColor = true;
+            btnClearVPN.Click += btnClearVPN_Click;
             // 
             // btnCalcularVPN
             // 
@@ -513,29 +607,13 @@
             btnEliminarFlujo2.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btnEliminarFlujo2.FlatStyle = FlatStyle.Flat;
             btnEliminarFlujo2.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEliminarFlujo2.Location = new Point(207, 206);
+            btnEliminarFlujo2.Location = new Point(51, 206);
             btnEliminarFlujo2.Name = "btnEliminarFlujo2";
             btnEliminarFlujo2.Size = new Size(151, 29);
             btnEliminarFlujo2.TabIndex = 36;
             btnEliminarFlujo2.Text = "Eliminar Flujo";
             btnEliminarFlujo2.UseVisualStyleBackColor = false;
             btnEliminarFlujo2.Click += btnEliminarFlujo2_Click;
-            // 
-            // btnAgregarFlujo2
-            // 
-            btnAgregarFlujo2.BackColor = Color.Gray;
-            btnAgregarFlujo2.FlatAppearance.BorderColor = Color.Gray;
-            btnAgregarFlujo2.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 192, 192);
-            btnAgregarFlujo2.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
-            btnAgregarFlujo2.FlatStyle = FlatStyle.Flat;
-            btnAgregarFlujo2.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAgregarFlujo2.Location = new Point(22, 206);
-            btnAgregarFlujo2.Name = "btnAgregarFlujo2";
-            btnAgregarFlujo2.Size = new Size(151, 29);
-            btnAgregarFlujo2.TabIndex = 35;
-            btnAgregarFlujo2.Text = "Agregar Flujo";
-            btnAgregarFlujo2.UseVisualStyleBackColor = false;
-            btnAgregarFlujo2.Click += btnAgregarFlujo2_Click;
             // 
             // VPNtxtInvesion
             // 
@@ -687,7 +765,6 @@
         private Label label5;
         private TextBox tirtxtInversion;
         private Label label6;
-        private Button btnAgregarFlujo;
         private DataGridView dataGridView1;
         private Button btnEliminarFlujo;
         private TextBox txtTIR;
@@ -698,12 +775,19 @@
         private Label label7;
         private DataGridView dataGridView2;
         private Button btnEliminarFlujo2;
-        private Button btnAgregarFlujo2;
         private TextBox VPNtxtInvesion;
         private Label label10;
         private PictureBox pictureBox3;
         private Label label11;
         private TextBox VPNtxtTasa;
         private Label label12;
+        private Button btnClearTIR;
+        private Button btnClearVPN;
+        private TextBox txtFlujo1;
+        private Label label13;
+        private TextBox txtFlujo2;
+        private Label label14;
+        private Button button1;
+        private Button button2;
     }
 }
