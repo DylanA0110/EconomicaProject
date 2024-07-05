@@ -17,6 +17,7 @@ namespace EconomicaForm
         public FrmInteresCompuesto()
         {
             InitializeComponent();
+            _service = new CalculationService();
         }
         private void btnCalVF_Click(object sender, EventArgs e)
         {

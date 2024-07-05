@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -49,7 +50,7 @@ namespace Models
         public decimal CalcularICInteres(Interes interes)
         {
             // Fórmula: I = VF - VP
-            return CalcularICValorFuturo(interes) - interes.Presente;
+            return interes.Futuro - interes.Presente;
         }
 
         public decimal CalcularICTPeriodo(Interes interes)
@@ -101,26 +102,83 @@ namespace Models
         public decimal AnualidadAnticipadaVP(Anualidad anualidad)
         {
             // Fórmula: VP_antic = R * [1 - (1 + i)^-n] / i * (1 + i)
-            return AnualidadVencidaVP(anualidad) * (1 + anualidad.TasaInteres / 100);
+            // Tasa de interés periódica (mensual en este caso)
+            decimal tasaInteresPeriodica = anualidad.TasaInteres / 100 / 12;
+
+            // Verificar que no sea cero para evitar división por cero
+            if (tasaInteresPeriodica == 0)
+            {
+                // Si la tasa es 0%, el valor presente es simplemente el monto multiplicado por el número de períodos
+                return anualidad.Monto * anualidad.Periodos * (1 + tasaInteresPeriodica);
+            }
+
+            // Fórmula completa: VP_antic = R * [1 - (1 + i)^-n] / i * (1 + i)
+            double tasaInteresDouble = (double)tasaInteresPeriodica;
+            double factor = 1 - Math.Pow(1 + tasaInteresDouble, (double)-anualidad.Periodos);
+            return anualidad.Monto * (decimal)(factor / tasaInteresDouble * (1 + tasaInteresDouble));
         }
+
 
         public decimal AnualidadAnticipadaVF(Anualidad anualidad)
         {
             // Fórmula: VF_antic = R * [(1 + i)^n - 1] / i * (1 + i)
-            return AnualidadVencidaVF(anualidad) * (1 + anualidad.TasaInteres / 100);
+            // Tasa de interés periódica (mensual en este caso)
+            decimal tasaInteresPeriodica = anualidad.TasaInteres / 100 / 12;
+
+            // Verificar que no sea cero para evitar división por cero
+            if (tasaInteresPeriodica == 0)
+            {
+                // Si la tasa es 0%, el valor futuro es simplemente el monto multiplicado por el número de períodos
+                return anualidad.Monto * anualidad.Periodos * (1 + tasaInteresPeriodica);
+            }
+
+            // Fórmula completa: VF_antic = R * [(1 + i)^n - 1] / i * (1 + i)
+            double tasaInteresDouble = (double)tasaInteresPeriodica;
+            double factor = Math.Pow(1 + tasaInteresDouble, (double)anualidad.Periodos) - 1;
+            return anualidad.Monto * (decimal)(factor / tasaInteresDouble * (1 + tasaInteresDouble));
         }
 
         public decimal AnualidadDiferidaVP(AnualidadDiferida anualidadDiferida)
         {
             // Fórmula: VP_diferido = R * [1 - (1 + i)^-n] / i / (1 + i)^d
-            return AnualidadVencidaVP(anualidadDiferida) / (decimal)Math.Pow((double)(1 + anualidadDiferida.TasaInteres / 100), (double)anualidadDiferida.PeriodosDiferimiento);
+            // Tasa de interés periódica (mensual en este caso)
+            decimal tasaInteresPeriodica = anualidadDiferida.TasaInteres / 100 / 12;
+
+            // Verificar que no sea cero para evitar división por cero
+            if (tasaInteresPeriodica == 0)
+            {
+                // Si la tasa es 0%, el valor presente es simplemente el monto multiplicado por el número de períodos
+                return anualidadDiferida.Monto * anualidadDiferida.Periodos / (1 + anualidadDiferida.TasaInteres / 100 / 12);
+            }
+
+            // Fórmula completa: VP_diferido = R * [1 - (1 + i)^-n] / i / (1 + i)^d
+            double tasaInteresDouble = (double)tasaInteresPeriodica;
+            double factor = 1 - Math.Pow(1 + tasaInteresDouble, (double)-anualidadDiferida.Periodos);
+            double descuento = Math.Pow(1 + tasaInteresDouble, (double)anualidadDiferida.PeriodosDiferimiento);
+            return anualidadDiferida.Monto * (decimal)(factor / tasaInteresDouble / descuento);
         }
+
 
         public decimal AnualidadDiferidaVF(AnualidadDiferida anualidadDiferida)
         {
             // Fórmula: VF_diferido = R * [(1 + i)^n - 1] / i / (1 + i)^d
-            return AnualidadVencidaVF(anualidadDiferida) / (decimal)Math.Pow((double)(1 + anualidadDiferida.TasaInteres / 100), (double)anualidadDiferida.PeriodosDiferimiento);
+            // Tasa de interés periódica (mensual en este caso)
+            decimal tasaInteresPeriodica = anualidadDiferida.TasaInteres / 100 / 12;
+
+            // Verificar que no sea cero para evitar división por cero
+            if (tasaInteresPeriodica == 0)
+            {
+                // Si la tasa es 0%, el valor futuro es simplemente el monto multiplicado por el número de períodos
+                return anualidadDiferida.Monto * anualidadDiferida.Periodos / (1 + anualidadDiferida.TasaInteres / 100 / 12);
+            }
+
+            // Fórmula completa: VF_diferido = R * [(1 + i)^n - 1] / i / (1 + i)^d
+            double tasaInteresDouble = (double)tasaInteresPeriodica;
+            double factor = Math.Pow(1 + tasaInteresDouble, (double)anualidadDiferida.Periodos) - 1;
+            double descuento = Math.Pow(1 + tasaInteresDouble, (double)anualidadDiferida.PeriodosDiferimiento);
+            return anualidadDiferida.Monto * (decimal)(factor / tasaInteresDouble / descuento);
         }
+
 
         // Tasa Mínima Aceptable de Rendimiento (TMAR)
 

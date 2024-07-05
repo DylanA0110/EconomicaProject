@@ -36,6 +36,7 @@ namespace EconomicaForm
 
         private void btnCalcularTasa_Click(object sender, EventArgs e)
         {
+            try
             {
                 // Obtiene los valores del formulario
                 decimal tasa = decimal.Parse(txtTasa.Text);

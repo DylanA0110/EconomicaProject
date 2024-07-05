@@ -73,6 +73,16 @@ namespace EconomicaForm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AAsdsssss {
+            get {
+                object obj = ResourceManager.GetObject("AAsdsssss", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap asdasd {
             get {
                 object obj = ResourceManager.GetObject("asdasd", resourceCulture);
@@ -286,6 +296,16 @@ namespace EconomicaForm.Properties {
         internal static System.Drawing.Bitmap retirement_home {
             get {
                 object obj = ResourceManager.GetObject("retirement-home", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_04_190836 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-04 190836", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
