@@ -90,32 +90,32 @@
             pictureBox7 = new PictureBox();
             label22 = new Label();
             label23 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            DtxtResultadoVP = new TextBox();
+            DtxtPeriodoNVP = new TextBox();
             label24 = new Label();
-            button1 = new Button();
-            textBox3 = new TextBox();
+            btnCalcularDiferidaVP = new Button();
+            DtxtMontoVP = new TextBox();
             label25 = new Label();
-            textBox4 = new TextBox();
+            DtxtTasaVP = new TextBox();
             label26 = new Label();
             panel3 = new Panel();
             pictureBox8 = new PictureBox();
             label28 = new Label();
-            textBox5 = new TextBox();
+            DtxtPeriodoMVP = new TextBox();
             label29 = new Label();
             groupBox6 = new GroupBox();
-            textBox6 = new TextBox();
+            DtxtPeriodoMVF = new TextBox();
             label30 = new Label();
             pictureBox9 = new PictureBox();
             label31 = new Label();
             label32 = new Label();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
+            DtxtResultadoVF = new TextBox();
+            DtxtPeriodoNVF = new TextBox();
             label33 = new Label();
-            button2 = new Button();
-            textBox9 = new TextBox();
+            btnCalcularVFDiferida = new Button();
+            DtxtMontoVF = new TextBox();
             label34 = new Label();
-            textBox10 = new TextBox();
+            DtxtTasaVF = new TextBox();
             label35 = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -762,18 +762,18 @@
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(textBox5);
+            groupBox5.Controls.Add(DtxtPeriodoMVP);
             groupBox5.Controls.Add(label29);
             groupBox5.Controls.Add(pictureBox7);
             groupBox5.Controls.Add(label22);
             groupBox5.Controls.Add(label23);
-            groupBox5.Controls.Add(textBox1);
-            groupBox5.Controls.Add(textBox2);
+            groupBox5.Controls.Add(DtxtResultadoVP);
+            groupBox5.Controls.Add(DtxtPeriodoNVP);
             groupBox5.Controls.Add(label24);
-            groupBox5.Controls.Add(button1);
-            groupBox5.Controls.Add(textBox3);
+            groupBox5.Controls.Add(btnCalcularDiferidaVP);
+            groupBox5.Controls.Add(DtxtMontoVP);
             groupBox5.Controls.Add(label25);
-            groupBox5.Controls.Add(textBox4);
+            groupBox5.Controls.Add(DtxtTasaVP);
             groupBox5.Controls.Add(label26);
             groupBox5.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox5.Location = new Point(15, 70);
@@ -813,22 +813,22 @@
             label23.TabIndex = 14;
             label23.Text = "Resultado:";
             // 
-            // textBox1
+            // DtxtResultadoVP
             // 
-            textBox1.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox1.Location = new Point(340, 169);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(135, 27);
-            textBox1.TabIndex = 13;
+            DtxtResultadoVP.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtResultadoVP.Location = new Point(340, 169);
+            DtxtResultadoVP.Name = "DtxtResultadoVP";
+            DtxtResultadoVP.ReadOnly = true;
+            DtxtResultadoVP.Size = new Size(135, 27);
+            DtxtResultadoVP.TabIndex = 13;
             // 
-            // textBox2
+            // DtxtPeriodoNVP
             // 
-            textBox2.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox2.Location = new Point(643, 22);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(135, 27);
-            textBox2.TabIndex = 11;
+            DtxtPeriodoNVP.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtPeriodoNVP.Location = new Point(643, 22);
+            DtxtPeriodoNVP.Name = "DtxtPeriodoNVP";
+            DtxtPeriodoNVP.Size = new Size(135, 27);
+            DtxtPeriodoNVP.TabIndex = 11;
             // 
             // label24
             // 
@@ -840,26 +840,26 @@
             label24.TabIndex = 12;
             label24.Text = "Periodos(N):";
             // 
-            // button1
+            // btnCalcularDiferidaVP
             // 
-            button1.FlatAppearance.BorderColor = Color.White;
-            button1.FlatAppearance.MouseDownBackColor = Color.White;
-            button1.FlatAppearance.MouseOverBackColor = Color.White;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = Properties.Resources.calculadora;
-            button1.Location = new Point(27, 151);
-            button1.Name = "button1";
-            button1.Size = new Size(193, 66);
-            button1.TabIndex = 10;
-            button1.UseVisualStyleBackColor = true;
+            btnCalcularDiferidaVP.FlatAppearance.BorderColor = Color.White;
+            btnCalcularDiferidaVP.FlatAppearance.MouseDownBackColor = Color.White;
+            btnCalcularDiferidaVP.FlatAppearance.MouseOverBackColor = Color.White;
+            btnCalcularDiferidaVP.FlatStyle = FlatStyle.Flat;
+            btnCalcularDiferidaVP.Image = Properties.Resources.calculadora;
+            btnCalcularDiferidaVP.Location = new Point(27, 151);
+            btnCalcularDiferidaVP.Name = "btnCalcularDiferidaVP";
+            btnCalcularDiferidaVP.Size = new Size(193, 66);
+            btnCalcularDiferidaVP.TabIndex = 10;
+            btnCalcularDiferidaVP.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // DtxtMontoVP
             // 
-            textBox3.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox3.Location = new Point(392, 23);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(135, 27);
-            textBox3.TabIndex = 8;
+            DtxtMontoVP.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtMontoVP.Location = new Point(392, 23);
+            DtxtMontoVP.Name = "DtxtMontoVP";
+            DtxtMontoVP.Size = new Size(135, 27);
+            DtxtMontoVP.TabIndex = 8;
             // 
             // label25
             // 
@@ -871,13 +871,13 @@
             label25.TabIndex = 9;
             label25.Text = "Monto:";
             // 
-            // textBox4
+            // DtxtTasaVP
             // 
-            textBox4.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox4.Location = new Point(141, 27);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(135, 27);
-            textBox4.TabIndex = 6;
+            DtxtTasaVP.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtTasaVP.Location = new Point(141, 27);
+            DtxtTasaVP.Name = "DtxtTasaVP";
+            DtxtTasaVP.Size = new Size(135, 27);
+            DtxtTasaVP.TabIndex = 6;
             // 
             // label26
             // 
@@ -919,13 +919,13 @@
             label28.TabIndex = 1;
             label28.Text = "Anualidad Diferida";
             // 
-            // textBox5
+            // DtxtPeriodoMVP
             // 
-            textBox5.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox5.Location = new Point(368, 84);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(135, 27);
-            textBox5.TabIndex = 17;
+            DtxtPeriodoMVP.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtPeriodoMVP.Location = new Point(368, 84);
+            DtxtPeriodoMVP.Name = "DtxtPeriodoMVP";
+            DtxtPeriodoMVP.Size = new Size(135, 27);
+            DtxtPeriodoMVP.TabIndex = 17;
             // 
             // label29
             // 
@@ -939,18 +939,18 @@
             // 
             // groupBox6
             // 
-            groupBox6.Controls.Add(textBox6);
+            groupBox6.Controls.Add(DtxtPeriodoMVF);
             groupBox6.Controls.Add(label30);
             groupBox6.Controls.Add(pictureBox9);
             groupBox6.Controls.Add(label31);
             groupBox6.Controls.Add(label32);
-            groupBox6.Controls.Add(textBox7);
-            groupBox6.Controls.Add(textBox8);
+            groupBox6.Controls.Add(DtxtResultadoVF);
+            groupBox6.Controls.Add(DtxtPeriodoNVF);
             groupBox6.Controls.Add(label33);
-            groupBox6.Controls.Add(button2);
-            groupBox6.Controls.Add(textBox9);
+            groupBox6.Controls.Add(btnCalcularVFDiferida);
+            groupBox6.Controls.Add(DtxtMontoVF);
             groupBox6.Controls.Add(label34);
-            groupBox6.Controls.Add(textBox10);
+            groupBox6.Controls.Add(DtxtTasaVF);
             groupBox6.Controls.Add(label35);
             groupBox6.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox6.Location = new Point(15, 310);
@@ -960,13 +960,13 @@
             groupBox6.TabStop = false;
             groupBox6.Text = "Anualidad Diferida VF";
             // 
-            // textBox6
+            // DtxtPeriodoMVF
             // 
-            textBox6.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox6.Location = new Point(368, 84);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(135, 27);
-            textBox6.TabIndex = 17;
+            DtxtPeriodoMVF.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtPeriodoMVF.Location = new Point(368, 84);
+            DtxtPeriodoMVF.Name = "DtxtPeriodoMVF";
+            DtxtPeriodoMVF.Size = new Size(135, 27);
+            DtxtPeriodoMVF.TabIndex = 17;
             // 
             // label30
             // 
@@ -1008,22 +1008,22 @@
             label32.TabIndex = 14;
             label32.Text = "Resultado:";
             // 
-            // textBox7
+            // DtxtResultadoVF
             // 
-            textBox7.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox7.Location = new Point(340, 169);
-            textBox7.Name = "textBox7";
-            textBox7.ReadOnly = true;
-            textBox7.Size = new Size(135, 27);
-            textBox7.TabIndex = 13;
+            DtxtResultadoVF.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtResultadoVF.Location = new Point(340, 169);
+            DtxtResultadoVF.Name = "DtxtResultadoVF";
+            DtxtResultadoVF.ReadOnly = true;
+            DtxtResultadoVF.Size = new Size(135, 27);
+            DtxtResultadoVF.TabIndex = 13;
             // 
-            // textBox8
+            // DtxtPeriodoNVF
             // 
-            textBox8.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox8.Location = new Point(643, 22);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(135, 27);
-            textBox8.TabIndex = 11;
+            DtxtPeriodoNVF.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtPeriodoNVF.Location = new Point(643, 22);
+            DtxtPeriodoNVF.Name = "DtxtPeriodoNVF";
+            DtxtPeriodoNVF.Size = new Size(135, 27);
+            DtxtPeriodoNVF.TabIndex = 11;
             // 
             // label33
             // 
@@ -1035,26 +1035,26 @@
             label33.TabIndex = 12;
             label33.Text = "Periodos(N):";
             // 
-            // button2
+            // btnCalcularVFDiferida
             // 
-            button2.FlatAppearance.BorderColor = Color.White;
-            button2.FlatAppearance.MouseDownBackColor = Color.White;
-            button2.FlatAppearance.MouseOverBackColor = Color.White;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Image = Properties.Resources.calculadora;
-            button2.Location = new Point(27, 151);
-            button2.Name = "button2";
-            button2.Size = new Size(193, 66);
-            button2.TabIndex = 10;
-            button2.UseVisualStyleBackColor = true;
+            btnCalcularVFDiferida.FlatAppearance.BorderColor = Color.White;
+            btnCalcularVFDiferida.FlatAppearance.MouseDownBackColor = Color.White;
+            btnCalcularVFDiferida.FlatAppearance.MouseOverBackColor = Color.White;
+            btnCalcularVFDiferida.FlatStyle = FlatStyle.Flat;
+            btnCalcularVFDiferida.Image = Properties.Resources.calculadora;
+            btnCalcularVFDiferida.Location = new Point(27, 151);
+            btnCalcularVFDiferida.Name = "btnCalcularVFDiferida";
+            btnCalcularVFDiferida.Size = new Size(193, 66);
+            btnCalcularVFDiferida.TabIndex = 10;
+            btnCalcularVFDiferida.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // DtxtMontoVF
             // 
-            textBox9.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox9.Location = new Point(392, 23);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(135, 27);
-            textBox9.TabIndex = 8;
+            DtxtMontoVF.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtMontoVF.Location = new Point(392, 23);
+            DtxtMontoVF.Name = "DtxtMontoVF";
+            DtxtMontoVF.Size = new Size(135, 27);
+            DtxtMontoVF.TabIndex = 8;
             // 
             // label34
             // 
@@ -1066,13 +1066,13 @@
             label34.TabIndex = 9;
             label34.Text = "Monto:";
             // 
-            // textBox10
+            // DtxtTasaVF
             // 
-            textBox10.Font = new Font("Century", 12F, FontStyle.Bold);
-            textBox10.Location = new Point(141, 27);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(135, 27);
-            textBox10.TabIndex = 6;
+            DtxtTasaVF.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtTasaVF.Location = new Point(141, 27);
+            DtxtTasaVF.Name = "DtxtTasaVF";
+            DtxtTasaVF.Size = new Size(135, 27);
+            DtxtTasaVF.TabIndex = 6;
             // 
             // label35
             // 
@@ -1191,32 +1191,32 @@
         private PictureBox pictureBox7;
         private Label label22;
         private Label label23;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox DtxtResultadoVP;
+        private TextBox DtxtPeriodoNVP;
         private Label label24;
-        private Button button1;
-        private TextBox textBox3;
+        private Button btnCalcularDiferidaVP;
+        private TextBox DtxtMontoVP;
         private Label label25;
-        private TextBox textBox4;
+        private TextBox DtxtTasaVP;
         private Label label26;
         private Panel panel3;
         private PictureBox pictureBox8;
         private Label label28;
-        private TextBox textBox5;
+        private TextBox DtxtPeriodoMVP;
         private Label label29;
         private GroupBox groupBox6;
-        private TextBox textBox6;
+        private TextBox DtxtPeriodoMVF;
         private Label label30;
         private PictureBox pictureBox9;
         private Label label31;
         private Label label32;
-        private TextBox textBox7;
-        private TextBox textBox8;
+        private TextBox DtxtResultadoVF;
+        private TextBox DtxtPeriodoNVF;
         private Label label33;
-        private Button button2;
-        private TextBox textBox9;
+        private Button btnCalcularVFDiferida;
+        private TextBox DtxtMontoVF;
         private Label label34;
-        private TextBox textBox10;
+        private TextBox DtxtTasaVF;
         private Label label35;
     }
 }
