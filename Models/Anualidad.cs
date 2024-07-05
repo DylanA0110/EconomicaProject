@@ -16,7 +16,7 @@ namespace Models
 
     namespace Models
     {
-        public class Anualidad
+         public class Anualidad
         {
             [Required]
             [Range(0, double.MaxValue, ErrorMessage = "El monto de la anualidad (R) debe ser mayor o igual a 0.")]
@@ -28,7 +28,12 @@ namespace Models
 
             [Required]
             [Range(1, int.MaxValue, ErrorMessage = "El número de periodos debe ser mayor o igual a 1.")]
-            public decimal Periodos { get; set; }
+            public int Periodos { get; set; }
+
+            [Range(0, double.MaxValue, ErrorMessage = "El gradiente (G) debe ser mayor o igual a 0.")]
+            public decimal Gradiente { get; set; }
+
+            public bool TieneGradiente { get; set; }
         }
     }
 

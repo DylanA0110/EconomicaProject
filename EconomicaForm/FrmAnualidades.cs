@@ -39,8 +39,24 @@ namespace EconomicaForm
             {
                 Monto = decimal.Parse(VtxtMontoVP.Text),
                 TasaInteres = decimal.Parse(VtxtTasaVP.Text),
-                Periodos = decimal.Parse(VtxtPeriodoVP.Text)
+                Periodos = int.Parse(VtxtPeriodoVP.Text),
+                TieneGradiente = chkGradienteVP.Checked
             };
+            if (chkGradienteVP.Checked)
+            {
+                if (!ValidateInputs(VtxtGradienteVP))
+                {
+                    MessageBox.Show("Por favor, complete el campo Gradiente.", "Campo Gradiente Requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    VtxtGradienteVP.Focus();
+                    return;
+                }
+
+                anualidad.Gradiente = decimal.Parse(VtxtGradienteVP.Text);
+            }
+            else
+            {
+                anualidad.Gradiente = 0; // O puede ser un valor por defecto si es necesario.
+            }
 
             decimal valorPresente = _calculationService.AnualidadVencidaVP(anualidad);
             VtxtVPResultado.Text = valorPresente.ToString("F2");
@@ -55,9 +71,25 @@ namespace EconomicaForm
             {
                 Monto = decimal.Parse(VtxtMontoVF.Text),
                 TasaInteres = decimal.Parse(VtxtTasaVF.Text),
-                Periodos = decimal.Parse(VtxtPeriodoVF.Text)
-            };
+                Periodos = int.Parse(VtxtPeriodoVF.Text),
+                TieneGradiente = chkGradienteVF.Checked
 
+            };
+            if (chkGradienteVF.Checked)
+            {
+                if (!ValidateInputs(VtxtGradienteVF))
+                {
+                    MessageBox.Show("Por favor, complete el campo Gradiente.", "Campo Gradiente Requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    VtxtGradienteVF.Focus();
+                    return;
+                }
+
+                anualidad.Gradiente = decimal.Parse(VtxtGradienteVF.Text);
+            }
+            else
+            {
+                anualidad.Gradiente = 0; // O puede ser un valor por defecto si es necesario.
+            }
             decimal valorFuturo = _calculationService.AnualidadVencidaVF(anualidad);
             vTxtResultadoVF.Text = valorFuturo.ToString("F2");
         }
@@ -71,8 +103,24 @@ namespace EconomicaForm
             {
                 Monto = decimal.Parse(AtxtMontoVP.Text),
                 TasaInteres = decimal.Parse(AtxtTasaVP.Text),
-                Periodos = decimal.Parse(AtxtPeriodoVP.Text)
+                Periodos = int.Parse(AtxtPeriodoVP.Text),
+                TieneGradiente = AChkConGradienteVP.Checked
             };
+            if (anualidad.TieneGradiente)
+            {
+                if (!ValidateInputs(AtxtGradienteVP))
+                {
+                    MessageBox.Show("Por favor, complete el campo Gradiente.", "Campo Gradiente Requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AtxtGradienteVP.Focus();
+                    return;
+                }
+
+                anualidad.Gradiente = decimal.Parse(AtxtGradienteVP.Text);
+            }
+            else
+            {
+                anualidad.Gradiente = 0; // O puede ser un valor por defecto si es necesario.
+            }
 
             decimal valorPresente = _calculationService.AnualidadAnticipadaVP(anualidad);
             AtxtResultado.Text = valorPresente.ToString("F2");
@@ -87,8 +135,24 @@ namespace EconomicaForm
             {
                 Monto = decimal.Parse(AtxtMontoVF.Text),
                 TasaInteres = decimal.Parse(AtxtTasaVF.Text),
-                Periodos = decimal.Parse(AtxtPeriodoVF.Text)
+                Periodos = int.Parse(AtxtPeriodoVF.Text),
+                TieneGradiente = AChkConGradienteVF.Checked
             };
+            if (anualidad.TieneGradiente)
+            {
+                if (!ValidateInputs(AtxtGradienteVF))
+                {
+                    MessageBox.Show("Por favor, complete el campo Gradiente.", "Campo Gradiente Requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    AtxtGradienteVF.Focus();
+                    return;
+                }
+
+                anualidad.Gradiente = decimal.Parse(AtxtGradienteVF.Text);
+            }
+            else
+            {
+                anualidad.Gradiente = 0; // O puede ser un valor por defecto si es necesario.
+            }
 
             decimal valorFuturo = _calculationService.AnualidadAnticipadaVF(anualidad);
             AtxtResultadoVF.Text = valorFuturo.ToString("F2");
@@ -103,11 +167,28 @@ namespace EconomicaForm
             {
                 Monto = decimal.Parse(DtxtMontoVP.Text),
                 TasaInteres = decimal.Parse(DtxtTasaVP.Text),
-                Periodos = decimal.Parse(DtxtPeriodoNVP.Text),
-                PeriodosDiferimiento = decimal.Parse(DtxtPeriodoMVP.Text)
+                Periodos = int.Parse(DtxtPeriodoNVP.Text),
+                PeriodosDiferimiento = int.Parse(DtxtPeriodoMVP.Text),
+                TieneGradiente = DchkGradienteVP.Checked
             };
+            if (anualidadDiferida.TieneGradiente)
+            {
+                if (!ValidateInputs(DtxtGradienteVP))
+                {
+                    MessageBox.Show("Por favor, complete el campo Gradiente.", "Campo Gradiente Requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    DtxtGradienteVP.Focus();
+                    return;
+                }
 
-            decimal valorPresente = _calculationService.AnualidadDiferidaVP(anualidadDiferida);
+                anualidadDiferida.Gradiente = decimal.Parse(DtxtGradienteVP.Text);
+            }
+            else
+            {
+                anualidadDiferida.Gradiente = 0; // O puede ser un valor por defecto si es necesario.
+            }
+
+
+                decimal valorPresente = _calculationService.AnualidadDiferidaVP(anualidadDiferida);
             DtxtResultadoVP.Text = valorPresente.ToString("F2");
         }
 
@@ -120,9 +201,25 @@ namespace EconomicaForm
             {
                 Monto = decimal.Parse(DtxtMontoVF.Text),
                 TasaInteres = decimal.Parse(DtxtTasaVF.Text),
-                Periodos = decimal.Parse(DtxtPeriodoNVF.Text),
-                PeriodosDiferimiento = decimal.Parse(DtxtPeriodoMVF.Text)
+                Periodos = int.Parse(DtxtPeriodoNVF.Text),
+                PeriodosDiferimiento = int.Parse(DtxtPeriodoMVF.Text),
+                TieneGradiente = DchkGradienteVF.Checked
             };
+            if (anualidadDiferida.TieneGradiente)
+            {
+                if (!ValidateInputs(DtxtGradienteVF))
+                {
+                    MessageBox.Show("Por favor, complete el campo Gradiente.", "Campo Gradiente Requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    DtxtGradienteVF.Focus();
+                    return;
+                }
+
+                anualidadDiferida.Gradiente = decimal.Parse(DtxtGradienteVF.Text);
+            }
+            else
+            {
+                anualidadDiferida.Gradiente = 0; // O puede ser un valor por defecto si es necesario.
+            }
 
             decimal valorFuturo = _calculationService.AnualidadDiferidaVF(anualidadDiferida);
             DtxtResultadoVF.Text = valorFuturo.ToString("F2");
@@ -164,6 +261,79 @@ namespace EconomicaForm
             DtxtPeriodoMVF.Clear();
             DtxtPeriodoNVF.Clear();
             DtxtResultadoVF.Clear();
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFormulas.Checked)
+            {
+                pbFormula2VF.Visible = true;
+                pbFormula2VP.Visible = true;
+            }
+            else
+            {
+                pbFormula2VF.Visible = false;
+                pbFormula2VP.Visible = false;
+            }
+        }
+
+        private void AChckFormulasVer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AChckFormulasVer.Checked)
+            {
+                APbFormula2VP.Visible = true;
+                APbFormula2VF.Visible = true;
+            }
+            else
+            {
+                APbFormula2VF.Visible = false;
+                APbFormula2VP.Visible = false;
+            }
+        }
+
+        private void DChckFormulasVer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (DChckFormulasVer.Checked)
+            {
+                DPbFormula2VP.Visible = true;
+                DPbFormula2VF.Visible = true;
+            }
+            else
+            {
+                DPbFormula2VF.Visible = false;
+                DPbFormula2VP.Visible = false;
+            }
+
+        }
+
+        private void chkGradienteVP_CheckedChanged(object sender, EventArgs e)
+        {
+            VtxtGradienteVP.Enabled = true;
+        }
+
+        private void chkGradienteVF_CheckedChanged(object sender, EventArgs e)
+        {
+            VtxtGradienteVF.Enabled = true;
+        }
+
+        private void AChkConGradienteVP_CheckedChanged(object sender, EventArgs e)
+        {
+            AtxtGradienteVP.Enabled = true;
+        }
+
+        private void AChkConGradienteVF_CheckedChanged(object sender, EventArgs e)
+        {
+            AtxtGradienteVF.Enabled = true;
+        }
+
+        private void DchkGradienteVP_CheckedChanged(object sender, EventArgs e)
+        {
+            DtxtGradienteVP.Enabled = true;
+        }
+
+        private void DchkGradienteVF_CheckedChanged(object sender, EventArgs e)
+        {
+            DtxtGradienteVF.Enabled = true;
         }
     }
 }

@@ -32,6 +32,10 @@
             tabPage1 = new TabPage();
             btnClearVencida = new Button();
             groupBox2 = new GroupBox();
+            pbFormula2VF = new PictureBox();
+            chkGradienteVF = new CheckBox();
+            VtxtGradienteVF = new TextBox();
+            label37 = new Label();
             pictureBox2 = new PictureBox();
             label10 = new Label();
             label5 = new Label();
@@ -44,6 +48,11 @@
             VtxtTasaVF = new TextBox();
             label8 = new Label();
             groupBox1 = new GroupBox();
+            chkFormulas = new CheckBox();
+            pbFormula2VP = new PictureBox();
+            chkGradienteVP = new CheckBox();
+            VtxtGradienteVP = new TextBox();
+            label36 = new Label();
             pictureBox6 = new PictureBox();
             label27 = new Label();
             label9 = new Label();
@@ -61,6 +70,10 @@
             tabPage2 = new TabPage();
             btnClearAnticipada = new Button();
             groupBox4 = new GroupBox();
+            APbFormula2VF = new PictureBox();
+            AChkConGradienteVF = new CheckBox();
+            AtxtGradienteVF = new TextBox();
+            label39 = new Label();
             pictureBox5 = new PictureBox();
             label17 = new Label();
             label18 = new Label();
@@ -73,6 +86,11 @@
             AtxtTasaVF = new TextBox();
             label21 = new Label();
             groupBox3 = new GroupBox();
+            APbFormula2VP = new PictureBox();
+            AChckFormulasVer = new CheckBox();
+            AChkConGradienteVP = new CheckBox();
+            AtxtGradienteVP = new TextBox();
+            label38 = new Label();
             pictureBox3 = new PictureBox();
             label11 = new Label();
             label12 = new Label();
@@ -90,6 +108,10 @@
             tabPage3 = new TabPage();
             btnClearDiferida = new Button();
             groupBox6 = new GroupBox();
+            DPbFormula2VF = new PictureBox();
+            DchkGradienteVF = new CheckBox();
+            DtxtGradienteVF = new TextBox();
+            label41 = new Label();
             DtxtPeriodoMVF = new TextBox();
             label30 = new Label();
             pictureBox9 = new PictureBox();
@@ -104,6 +126,11 @@
             DtxtTasaVF = new TextBox();
             label35 = new Label();
             groupBox5 = new GroupBox();
+            DPbFormula2VP = new PictureBox();
+            DChckFormulasVer = new CheckBox();
+            DchkGradienteVP = new CheckBox();
+            DtxtGradienteVP = new TextBox();
+            label40 = new Label();
             DtxtPeriodoMVP = new TextBox();
             label29 = new Label();
             pictureBox7 = new PictureBox();
@@ -123,22 +150,28 @@
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbFormula2VF).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbFormula2VP).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabPage2.SuspendLayout();
             groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)APbFormula2VF).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)APbFormula2VP).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             tabPage3.SuspendLayout();
             groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DPbFormula2VF).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DPbFormula2VP).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -186,6 +219,10 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(pbFormula2VF);
+            groupBox2.Controls.Add(chkGradienteVF);
+            groupBox2.Controls.Add(VtxtGradienteVF);
+            groupBox2.Controls.Add(label37);
             groupBox2.Controls.Add(pictureBox2);
             groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(label5);
@@ -200,15 +237,56 @@
             groupBox2.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox2.Location = new Point(15, 298);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(784, 203);
+            groupBox2.Size = new Size(840, 203);
             groupBox2.TabIndex = 15;
             groupBox2.TabStop = false;
             groupBox2.Text = "Anualidad Vencida VF";
             // 
+            // pbFormula2VF
+            // 
+            pbFormula2VF.Image = Properties.Resources.Screenshot_2024_07_05_014757;
+            pbFormula2VF.Location = new Point(558, 126);
+            pbFormula2VF.Name = "pbFormula2VF";
+            pbFormula2VF.Size = new Size(282, 47);
+            pbFormula2VF.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbFormula2VF.TabIndex = 22;
+            pbFormula2VF.TabStop = false;
+            pbFormula2VF.Visible = false;
+            // 
+            // chkGradienteVF
+            // 
+            chkGradienteVF.AutoSize = true;
+            chkGradienteVF.Location = new Point(330, 75);
+            chkGradienteVF.Name = "chkGradienteVF";
+            chkGradienteVF.Size = new Size(136, 20);
+            chkGradienteVF.TabIndex = 22;
+            chkGradienteVF.Text = "¿Con gradiente?";
+            chkGradienteVF.UseVisualStyleBackColor = true;
+            chkGradienteVF.CheckedChanged += chkGradienteVF_CheckedChanged;
+            // 
+            // VtxtGradienteVF
+            // 
+            VtxtGradienteVF.Enabled = false;
+            VtxtGradienteVF.Font = new Font("Century", 12F, FontStyle.Bold);
+            VtxtGradienteVF.Location = new Point(150, 68);
+            VtxtGradienteVF.Name = "VtxtGradienteVF";
+            VtxtGradienteVF.Size = new Size(135, 27);
+            VtxtGradienteVF.TabIndex = 20;
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Font = new Font("Century", 12F, FontStyle.Bold);
+            label37.Location = new Point(27, 71);
+            label37.Name = "label37";
+            label37.Size = new Size(97, 20);
+            label37.TabIndex = 21;
+            label37.Text = "Gradiente:";
+            // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Screenshot_2024_07_04_190836;
-            pictureBox2.Location = new Point(570, 136);
+            pictureBox2.Location = new Point(653, 126);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(159, 47);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -219,7 +297,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Century", 12F, FontStyle.Bold);
-            label10.Location = new Point(570, 113);
+            label10.Location = new Point(653, 89);
             label10.Name = "label10";
             label10.Size = new Size(139, 20);
             label10.TabIndex = 17;
@@ -229,7 +307,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century", 12F, FontStyle.Bold);
-            label5.Location = new Point(237, 135);
+            label5.Location = new Point(267, 153);
             label5.Name = "label5";
             label5.Size = new Size(97, 20);
             label5.TabIndex = 14;
@@ -238,7 +316,7 @@
             // vTxtResultadoVF
             // 
             vTxtResultadoVF.Font = new Font("Century", 12F, FontStyle.Bold);
-            vTxtResultadoVF.Location = new Point(340, 131);
+            vTxtResultadoVF.Location = new Point(370, 149);
             vTxtResultadoVF.Name = "vTxtResultadoVF";
             vTxtResultadoVF.ReadOnly = true;
             vTxtResultadoVF.Size = new Size(135, 27);
@@ -271,7 +349,7 @@
             btnCalVFVencida.Image = Properties.Resources.calculadora;
             btnCalVFVencida.Location = new Point(27, 113);
             btnCalVFVencida.Name = "btnCalVFVencida";
-            btnCalVFVencida.Size = new Size(193, 66);
+            btnCalVFVencida.Size = new Size(77, 66);
             btnCalVFVencida.TabIndex = 10;
             btnCalVFVencida.UseVisualStyleBackColor = true;
             btnCalVFVencida.Click += btnCalVFVencida_Click;
@@ -314,6 +392,11 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(chkFormulas);
+            groupBox1.Controls.Add(pbFormula2VP);
+            groupBox1.Controls.Add(chkGradienteVP);
+            groupBox1.Controls.Add(VtxtGradienteVP);
+            groupBox1.Controls.Add(label36);
             groupBox1.Controls.Add(pictureBox6);
             groupBox1.Controls.Add(label27);
             groupBox1.Controls.Add(label9);
@@ -328,15 +411,67 @@
             groupBox1.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(15, 70);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(784, 203);
+            groupBox1.Size = new Size(846, 203);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
             groupBox1.Text = "Anualidad Vencida VP";
             // 
+            // chkFormulas
+            // 
+            chkFormulas.AutoSize = true;
+            chkFormulas.Location = new Point(545, 70);
+            chkFormulas.Name = "chkFormulas";
+            chkFormulas.Size = new Size(217, 20);
+            chkFormulas.TabIndex = 22;
+            chkFormulas.Text = "Mostrar formulas gradiente";
+            chkFormulas.UseVisualStyleBackColor = true;
+            chkFormulas.CheckedChanged += checkBox3_CheckedChanged;
+            // 
+            // pbFormula2VP
+            // 
+            pbFormula2VP.Image = Properties.Resources.Screenshot_2024_07_05_014628;
+            pbFormula2VP.Location = new Point(558, 135);
+            pbFormula2VP.Name = "pbFormula2VP";
+            pbFormula2VP.Size = new Size(282, 47);
+            pbFormula2VP.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbFormula2VP.TabIndex = 21;
+            pbFormula2VP.TabStop = false;
+            pbFormula2VP.Visible = false;
+            // 
+            // chkGradienteVP
+            // 
+            chkGradienteVP.AutoSize = true;
+            chkGradienteVP.Location = new Point(320, 75);
+            chkGradienteVP.Name = "chkGradienteVP";
+            chkGradienteVP.Size = new Size(136, 20);
+            chkGradienteVP.TabIndex = 20;
+            chkGradienteVP.Text = "¿Con gradiente?";
+            chkGradienteVP.UseVisualStyleBackColor = true;
+            chkGradienteVP.CheckedChanged += chkGradienteVP_CheckedChanged;
+            // 
+            // VtxtGradienteVP
+            // 
+            VtxtGradienteVP.Enabled = false;
+            VtxtGradienteVP.Font = new Font("Century", 12F, FontStyle.Bold);
+            VtxtGradienteVP.Location = new Point(150, 70);
+            VtxtGradienteVP.Name = "VtxtGradienteVP";
+            VtxtGradienteVP.Size = new Size(135, 27);
+            VtxtGradienteVP.TabIndex = 18;
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Font = new Font("Century", 12F, FontStyle.Bold);
+            label36.Location = new Point(27, 73);
+            label36.Name = "label36";
+            label36.Size = new Size(97, 20);
+            label36.TabIndex = 19;
+            label36.Text = "Gradiente:";
+            // 
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.AAsdsssss;
-            pictureBox6.Location = new Point(570, 118);
+            pictureBox6.Location = new Point(648, 135);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(159, 47);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -347,7 +482,7 @@
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Century", 12F, FontStyle.Bold);
-            label27.Location = new Point(570, 95);
+            label27.Location = new Point(631, 93);
             label27.Name = "label27";
             label27.Size = new Size(139, 20);
             label27.TabIndex = 15;
@@ -357,7 +492,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Century", 12F, FontStyle.Bold);
-            label9.Location = new Point(237, 135);
+            label9.Location = new Point(267, 147);
             label9.Name = "label9";
             label9.Size = new Size(97, 20);
             label9.TabIndex = 14;
@@ -366,7 +501,7 @@
             // VtxtVPResultado
             // 
             VtxtVPResultado.Font = new Font("Century", 12F, FontStyle.Bold);
-            VtxtVPResultado.Location = new Point(340, 131);
+            VtxtVPResultado.Location = new Point(370, 143);
             VtxtVPResultado.Name = "VtxtVPResultado";
             VtxtVPResultado.ReadOnly = true;
             VtxtVPResultado.Size = new Size(135, 27);
@@ -399,7 +534,7 @@
             btnCalVPVencida.Image = Properties.Resources.calculadora;
             btnCalVPVencida.Location = new Point(27, 113);
             btnCalVPVencida.Name = "btnCalVPVencida";
-            btnCalVPVencida.Size = new Size(193, 66);
+            btnCalVPVencida.Size = new Size(90, 66);
             btnCalVPVencida.TabIndex = 10;
             btnCalVPVencida.UseVisualStyleBackColor = true;
             btnCalVPVencida.Click += btnCalVPVencida_Click;
@@ -500,6 +635,10 @@
             // 
             // groupBox4
             // 
+            groupBox4.Controls.Add(APbFormula2VF);
+            groupBox4.Controls.Add(AChkConGradienteVF);
+            groupBox4.Controls.Add(AtxtGradienteVF);
+            groupBox4.Controls.Add(label39);
             groupBox4.Controls.Add(pictureBox5);
             groupBox4.Controls.Add(label17);
             groupBox4.Controls.Add(label18);
@@ -514,15 +653,56 @@
             groupBox4.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox4.Location = new Point(15, 295);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(784, 203);
+            groupBox4.Size = new Size(849, 235);
             groupBox4.TabIndex = 17;
             groupBox4.TabStop = false;
             groupBox4.Text = "Anualidad Anticipada VF";
             // 
+            // APbFormula2VF
+            // 
+            APbFormula2VF.Image = Properties.Resources.Screenshot_2024_07_05_030158;
+            APbFormula2VF.Location = new Point(545, 153);
+            APbFormula2VF.Name = "APbFormula2VF";
+            APbFormula2VF.Size = new Size(304, 47);
+            APbFormula2VF.SizeMode = PictureBoxSizeMode.StretchImage;
+            APbFormula2VF.TabIndex = 29;
+            APbFormula2VF.TabStop = false;
+            APbFormula2VF.Visible = false;
+            // 
+            // AChkConGradienteVF
+            // 
+            AChkConGradienteVF.AutoSize = true;
+            AChkConGradienteVF.Location = new Point(360, 93);
+            AChkConGradienteVF.Name = "AChkConGradienteVF";
+            AChkConGradienteVF.Size = new Size(136, 20);
+            AChkConGradienteVF.TabIndex = 28;
+            AChkConGradienteVF.Text = "¿Con gradiente?";
+            AChkConGradienteVF.UseVisualStyleBackColor = true;
+            AChkConGradienteVF.CheckedChanged += AChkConGradienteVF_CheckedChanged;
+            // 
+            // AtxtGradienteVF
+            // 
+            AtxtGradienteVF.Enabled = false;
+            AtxtGradienteVF.Font = new Font("Century", 12F, FontStyle.Bold);
+            AtxtGradienteVF.Location = new Point(170, 88);
+            AtxtGradienteVF.Name = "AtxtGradienteVF";
+            AtxtGradienteVF.Size = new Size(135, 27);
+            AtxtGradienteVF.TabIndex = 26;
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Font = new Font("Century", 12F, FontStyle.Bold);
+            label39.Location = new Point(47, 91);
+            label39.Name = "label39";
+            label39.Size = new Size(97, 20);
+            label39.TabIndex = 27;
+            label39.Text = "Gradiente:";
+            // 
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.Screenshot_2024_07_04_191406;
-            pictureBox5.Location = new Point(570, 118);
+            pictureBox5.Location = new Point(600, 153);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(159, 47);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -533,7 +713,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Century", 12F, FontStyle.Bold);
-            label17.Location = new Point(570, 95);
+            label17.Location = new Point(600, 123);
             label17.Name = "label17";
             label17.Size = new Size(139, 20);
             label17.TabIndex = 15;
@@ -543,7 +723,7 @@
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Century", 12F, FontStyle.Bold);
-            label18.Location = new Point(237, 135);
+            label18.Location = new Point(237, 175);
             label18.Name = "label18";
             label18.Size = new Size(97, 20);
             label18.TabIndex = 14;
@@ -552,7 +732,7 @@
             // AtxtResultadoVF
             // 
             AtxtResultadoVF.Font = new Font("Century", 12F, FontStyle.Bold);
-            AtxtResultadoVF.Location = new Point(340, 131);
+            AtxtResultadoVF.Location = new Point(340, 171);
             AtxtResultadoVF.Name = "AtxtResultadoVF";
             AtxtResultadoVF.ReadOnly = true;
             AtxtResultadoVF.Size = new Size(135, 27);
@@ -583,9 +763,9 @@
             btnCalVFAnticipada.FlatAppearance.MouseOverBackColor = Color.White;
             btnCalVFAnticipada.FlatStyle = FlatStyle.Flat;
             btnCalVFAnticipada.Image = Properties.Resources.calculadora;
-            btnCalVFAnticipada.Location = new Point(27, 113);
+            btnCalVFAnticipada.Location = new Point(27, 153);
             btnCalVFAnticipada.Name = "btnCalVFAnticipada";
-            btnCalVFAnticipada.Size = new Size(193, 66);
+            btnCalVFAnticipada.Size = new Size(104, 66);
             btnCalVFAnticipada.TabIndex = 10;
             btnCalVFAnticipada.UseVisualStyleBackColor = true;
             btnCalVFAnticipada.Click += btnCalVFAnticipada_Click;
@@ -628,6 +808,11 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(APbFormula2VP);
+            groupBox3.Controls.Add(AChckFormulasVer);
+            groupBox3.Controls.Add(AChkConGradienteVP);
+            groupBox3.Controls.Add(AtxtGradienteVP);
+            groupBox3.Controls.Add(label38);
             groupBox3.Controls.Add(pictureBox3);
             groupBox3.Controls.Add(label11);
             groupBox3.Controls.Add(label12);
@@ -642,15 +827,67 @@
             groupBox3.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox3.Location = new Point(15, 70);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(784, 203);
+            groupBox3.Size = new Size(849, 203);
             groupBox3.TabIndex = 13;
             groupBox3.TabStop = false;
             groupBox3.Text = "Anualidad Anticipada VP";
             // 
+            // APbFormula2VP
+            // 
+            APbFormula2VP.Image = Properties.Resources.Screenshot_2024_07_05_030121;
+            APbFormula2VP.Location = new Point(545, 148);
+            APbFormula2VP.Name = "APbFormula2VP";
+            APbFormula2VP.Size = new Size(295, 47);
+            APbFormula2VP.SizeMode = PictureBoxSizeMode.StretchImage;
+            APbFormula2VP.TabIndex = 27;
+            APbFormula2VP.TabStop = false;
+            APbFormula2VP.Visible = false;
+            // 
+            // AChckFormulasVer
+            // 
+            AChckFormulasVer.AutoSize = true;
+            AChckFormulasVer.Location = new Point(587, 73);
+            AChckFormulasVer.Name = "AChckFormulasVer";
+            AChckFormulasVer.Size = new Size(217, 20);
+            AChckFormulasVer.TabIndex = 26;
+            AChckFormulasVer.Text = "Mostrar formulas gradiente";
+            AChckFormulasVer.UseVisualStyleBackColor = true;
+            AChckFormulasVer.CheckedChanged += AChckFormulasVer_CheckedChanged;
+            // 
+            // AChkConGradienteVP
+            // 
+            AChkConGradienteVP.AutoSize = true;
+            AChkConGradienteVP.Location = new Point(340, 78);
+            AChkConGradienteVP.Name = "AChkConGradienteVP";
+            AChkConGradienteVP.Size = new Size(136, 20);
+            AChkConGradienteVP.TabIndex = 25;
+            AChkConGradienteVP.Text = "¿Con gradiente?";
+            AChkConGradienteVP.UseVisualStyleBackColor = true;
+            AChkConGradienteVP.CheckedChanged += AChkConGradienteVP_CheckedChanged;
+            // 
+            // AtxtGradienteVP
+            // 
+            AtxtGradienteVP.Enabled = false;
+            AtxtGradienteVP.Font = new Font("Century", 12F, FontStyle.Bold);
+            AtxtGradienteVP.Location = new Point(150, 73);
+            AtxtGradienteVP.Name = "AtxtGradienteVP";
+            AtxtGradienteVP.Size = new Size(135, 27);
+            AtxtGradienteVP.TabIndex = 23;
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Font = new Font("Century", 12F, FontStyle.Bold);
+            label38.Location = new Point(27, 76);
+            label38.Name = "label38";
+            label38.Size = new Size(97, 20);
+            label38.TabIndex = 24;
+            label38.Text = "Gradiente:";
+            // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.Screenshot_2024_07_04_191304;
-            pictureBox3.Location = new Point(570, 118);
+            pictureBox3.Location = new Point(635, 148);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(159, 47);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -661,7 +898,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Century", 12F, FontStyle.Bold);
-            label11.Location = new Point(570, 95);
+            label11.Location = new Point(631, 113);
             label11.Name = "label11";
             label11.Size = new Size(139, 20);
             label11.TabIndex = 15;
@@ -671,7 +908,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Century", 12F, FontStyle.Bold);
-            label12.Location = new Point(237, 135);
+            label12.Location = new Point(237, 153);
             label12.Name = "label12";
             label12.Size = new Size(97, 20);
             label12.TabIndex = 14;
@@ -680,7 +917,7 @@
             // AtxtResultado
             // 
             AtxtResultado.Font = new Font("Century", 12F, FontStyle.Bold);
-            AtxtResultado.Location = new Point(340, 131);
+            AtxtResultado.Location = new Point(340, 149);
             AtxtResultado.Name = "AtxtResultado";
             AtxtResultado.ReadOnly = true;
             AtxtResultado.Size = new Size(135, 27);
@@ -711,9 +948,9 @@
             BtnCalVPAnticipada.FlatAppearance.MouseOverBackColor = Color.White;
             BtnCalVPAnticipada.FlatStyle = FlatStyle.Flat;
             BtnCalVPAnticipada.Image = Properties.Resources.calculadora;
-            BtnCalVPAnticipada.Location = new Point(27, 113);
+            BtnCalVPAnticipada.Location = new Point(27, 131);
             BtnCalVPAnticipada.Name = "BtnCalVPAnticipada";
-            BtnCalVPAnticipada.Size = new Size(193, 66);
+            BtnCalVPAnticipada.Size = new Size(104, 66);
             BtnCalVPAnticipada.TabIndex = 10;
             BtnCalVPAnticipada.UseVisualStyleBackColor = true;
             BtnCalVPAnticipada.Click += BtnCalVPAnticipada_Click;
@@ -814,6 +1051,10 @@
             // 
             // groupBox6
             // 
+            groupBox6.Controls.Add(DPbFormula2VF);
+            groupBox6.Controls.Add(DchkGradienteVF);
+            groupBox6.Controls.Add(DtxtGradienteVF);
+            groupBox6.Controls.Add(label41);
             groupBox6.Controls.Add(DtxtPeriodoMVF);
             groupBox6.Controls.Add(label30);
             groupBox6.Controls.Add(pictureBox9);
@@ -830,15 +1071,56 @@
             groupBox6.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox6.Location = new Point(15, 310);
             groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(784, 223);
+            groupBox6.Size = new Size(840, 239);
             groupBox6.TabIndex = 19;
             groupBox6.TabStop = false;
             groupBox6.Text = "Anualidad Diferida VF";
             // 
+            // DPbFormula2VF
+            // 
+            DPbFormula2VF.Image = Properties.Resources.Screenshot_2024_07_05_033300;
+            DPbFormula2VF.Location = new Point(551, 145);
+            DPbFormula2VF.Name = "DPbFormula2VF";
+            DPbFormula2VF.Size = new Size(295, 58);
+            DPbFormula2VF.SizeMode = PictureBoxSizeMode.StretchImage;
+            DPbFormula2VF.TabIndex = 32;
+            DPbFormula2VF.TabStop = false;
+            DPbFormula2VF.Visible = false;
+            // 
+            // DchkGradienteVF
+            // 
+            DchkGradienteVF.AutoSize = true;
+            DchkGradienteVF.Location = new Point(296, 80);
+            DchkGradienteVF.Name = "DchkGradienteVF";
+            DchkGradienteVF.Size = new Size(136, 20);
+            DchkGradienteVF.TabIndex = 32;
+            DchkGradienteVF.Text = "¿Con gradiente?";
+            DchkGradienteVF.UseVisualStyleBackColor = true;
+            DchkGradienteVF.CheckedChanged += DchkGradienteVF_CheckedChanged;
+            // 
+            // DtxtGradienteVF
+            // 
+            DtxtGradienteVF.Enabled = false;
+            DtxtGradienteVF.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtGradienteVF.Location = new Point(150, 75);
+            DtxtGradienteVF.Name = "DtxtGradienteVF";
+            DtxtGradienteVF.Size = new Size(135, 27);
+            DtxtGradienteVF.TabIndex = 30;
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.Font = new Font("Century", 12F, FontStyle.Bold);
+            label41.Location = new Point(27, 78);
+            label41.Name = "label41";
+            label41.Size = new Size(97, 20);
+            label41.TabIndex = 31;
+            label41.Text = "Gradiente:";
+            // 
             // DtxtPeriodoMVF
             // 
             DtxtPeriodoMVF.Font = new Font("Century", 12F, FontStyle.Bold);
-            DtxtPeriodoMVF.Location = new Point(368, 84);
+            DtxtPeriodoMVF.Location = new Point(705, 75);
             DtxtPeriodoMVF.Name = "DtxtPeriodoMVF";
             DtxtPeriodoMVF.Size = new Size(135, 27);
             DtxtPeriodoMVF.TabIndex = 17;
@@ -847,7 +1129,7 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Century", 12F, FontStyle.Bold);
-            label30.Location = new Point(126, 87);
+            label30.Location = new Point(463, 78);
             label30.Name = "label30";
             label30.Size = new Size(236, 20);
             label30.TabIndex = 18;
@@ -962,6 +1244,11 @@
             // 
             // groupBox5
             // 
+            groupBox5.Controls.Add(DPbFormula2VP);
+            groupBox5.Controls.Add(DChckFormulasVer);
+            groupBox5.Controls.Add(DchkGradienteVP);
+            groupBox5.Controls.Add(DtxtGradienteVP);
+            groupBox5.Controls.Add(label40);
             groupBox5.Controls.Add(DtxtPeriodoMVP);
             groupBox5.Controls.Add(label29);
             groupBox5.Controls.Add(pictureBox7);
@@ -978,15 +1265,67 @@
             groupBox5.Font = new Font("Century", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox5.Location = new Point(15, 70);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(784, 223);
+            groupBox5.Size = new Size(849, 223);
             groupBox5.TabIndex = 15;
             groupBox5.TabStop = false;
             groupBox5.Text = "Anualidad Diferida VP";
             // 
+            // DPbFormula2VP
+            // 
+            DPbFormula2VP.Image = Properties.Resources.Screenshot_2024_07_05_030121;
+            DPbFormula2VP.Location = new Point(554, 133);
+            DPbFormula2VP.Name = "DPbFormula2VP";
+            DPbFormula2VP.Size = new Size(295, 58);
+            DPbFormula2VP.SizeMode = PictureBoxSizeMode.StretchImage;
+            DPbFormula2VP.TabIndex = 31;
+            DPbFormula2VP.TabStop = false;
+            DPbFormula2VP.Visible = false;
+            // 
+            // DChckFormulasVer
+            // 
+            DChckFormulasVer.AutoSize = true;
+            DChckFormulasVer.Location = new Point(296, 110);
+            DChckFormulasVer.Name = "DChckFormulasVer";
+            DChckFormulasVer.Size = new Size(217, 20);
+            DChckFormulasVer.TabIndex = 30;
+            DChckFormulasVer.Text = "Mostrar formulas gradiente";
+            DChckFormulasVer.UseVisualStyleBackColor = true;
+            DChckFormulasVer.CheckedChanged += DChckFormulasVer_CheckedChanged;
+            // 
+            // DchkGradienteVP
+            // 
+            DchkGradienteVP.AutoSize = true;
+            DchkGradienteVP.Location = new Point(293, 75);
+            DchkGradienteVP.Name = "DchkGradienteVP";
+            DchkGradienteVP.Size = new Size(136, 20);
+            DchkGradienteVP.TabIndex = 29;
+            DchkGradienteVP.Text = "¿Con gradiente?";
+            DchkGradienteVP.UseVisualStyleBackColor = true;
+            DchkGradienteVP.CheckedChanged += DchkGradienteVP_CheckedChanged;
+            // 
+            // DtxtGradienteVP
+            // 
+            DtxtGradienteVP.Enabled = false;
+            DtxtGradienteVP.Font = new Font("Century", 12F, FontStyle.Bold);
+            DtxtGradienteVP.Location = new Point(141, 66);
+            DtxtGradienteVP.Name = "DtxtGradienteVP";
+            DtxtGradienteVP.Size = new Size(135, 27);
+            DtxtGradienteVP.TabIndex = 27;
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Font = new Font("Century", 12F, FontStyle.Bold);
+            label40.Location = new Point(18, 69);
+            label40.Name = "label40";
+            label40.Size = new Size(97, 20);
+            label40.TabIndex = 28;
+            label40.Text = "Gradiente:";
+            // 
             // DtxtPeriodoMVP
             // 
             DtxtPeriodoMVP.Font = new Font("Century", 12F, FontStyle.Bold);
-            DtxtPeriodoMVP.Location = new Point(368, 84);
+            DtxtPeriodoMVP.Location = new Point(694, 68);
             DtxtPeriodoMVP.Name = "DtxtPeriodoMVP";
             DtxtPeriodoMVP.Size = new Size(135, 27);
             DtxtPeriodoMVP.TabIndex = 17;
@@ -995,7 +1334,7 @@
             // 
             label29.AutoSize = true;
             label29.Font = new Font("Century", 12F, FontStyle.Bold);
-            label29.Location = new Point(126, 87);
+            label29.Location = new Point(452, 71);
             label29.Name = "label29";
             label29.Size = new Size(236, 20);
             label29.TabIndex = 18;
@@ -1004,7 +1343,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.Screenshot_2024_07_04_193117;
-            pictureBox7.Location = new Point(570, 151);
+            pictureBox7.Location = new Point(657, 139);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(172, 52);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -1015,7 +1354,7 @@
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Century", 12F, FontStyle.Bold);
-            label22.Location = new Point(570, 122);
+            label22.Location = new Point(657, 110);
             label22.Name = "label22";
             label22.Size = new Size(139, 20);
             label22.TabIndex = 15;
@@ -1025,7 +1364,7 @@
             // 
             label23.AutoSize = true;
             label23.Font = new Font("Century", 12F, FontStyle.Bold);
-            label23.Location = new Point(237, 173);
+            label23.Location = new Point(265, 185);
             label23.Name = "label23";
             label23.Size = new Size(97, 20);
             label23.TabIndex = 14;
@@ -1034,7 +1373,7 @@
             // DtxtResultadoVP
             // 
             DtxtResultadoVP.Font = new Font("Century", 12F, FontStyle.Bold);
-            DtxtResultadoVP.Location = new Point(340, 169);
+            DtxtResultadoVP.Location = new Point(368, 181);
             DtxtResultadoVP.Name = "DtxtResultadoVP";
             DtxtResultadoVP.ReadOnly = true;
             DtxtResultadoVP.Size = new Size(135, 27);
@@ -1043,7 +1382,7 @@
             // DtxtPeriodoNVP
             // 
             DtxtPeriodoNVP.Font = new Font("Century", 12F, FontStyle.Bold);
-            DtxtPeriodoNVP.Location = new Point(643, 22);
+            DtxtPeriodoNVP.Location = new Point(632, 22);
             DtxtPeriodoNVP.Name = "DtxtPeriodoNVP";
             DtxtPeriodoNVP.Size = new Size(135, 27);
             DtxtPeriodoNVP.TabIndex = 11;
@@ -1052,7 +1391,7 @@
             // 
             label24.AutoSize = true;
             label24.Font = new Font("Century", 12F, FontStyle.Bold);
-            label24.Location = new Point(533, 26);
+            label24.Location = new Point(522, 26);
             label24.Name = "label24";
             label24.Size = new Size(111, 20);
             label24.TabIndex = 12;
@@ -1065,9 +1404,9 @@
             btnCalcularDiferidaVP.FlatAppearance.MouseOverBackColor = Color.White;
             btnCalcularDiferidaVP.FlatStyle = FlatStyle.Flat;
             btnCalcularDiferidaVP.Image = Properties.Resources.calculadora;
-            btnCalcularDiferidaVP.Location = new Point(27, 151);
+            btnCalcularDiferidaVP.Location = new Point(27, 139);
             btnCalcularDiferidaVP.Name = "btnCalcularDiferidaVP";
-            btnCalcularDiferidaVP.Size = new Size(193, 66);
+            btnCalcularDiferidaVP.Size = new Size(84, 66);
             btnCalcularDiferidaVP.TabIndex = 10;
             btnCalcularDiferidaVP.UseVisualStyleBackColor = true;
             btnCalcularDiferidaVP.Click += btnCalcularDiferidaVP_Click;
@@ -1075,7 +1414,7 @@
             // DtxtMontoVP
             // 
             DtxtMontoVP.Font = new Font("Century", 12F, FontStyle.Bold);
-            DtxtMontoVP.Location = new Point(392, 23);
+            DtxtMontoVP.Location = new Point(368, 23);
             DtxtMontoVP.Name = "DtxtMontoVP";
             DtxtMontoVP.Size = new Size(135, 27);
             DtxtMontoVP.TabIndex = 8;
@@ -1084,7 +1423,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Century", 12F, FontStyle.Bold);
-            label25.Location = new Point(320, 27);
+            label25.Location = new Point(296, 27);
             label25.Name = "label25";
             label25.Size = new Size(66, 20);
             label25.TabIndex = 9;
@@ -1151,9 +1490,11 @@
             tabPage1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbFormula2VF).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbFormula2VP).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -1161,9 +1502,11 @@
             tabPage2.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)APbFormula2VF).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)APbFormula2VP).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -1171,9 +1514,11 @@
             tabPage3.ResumeLayout(false);
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DPbFormula2VF).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DPbFormula2VP).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
@@ -1275,5 +1620,32 @@
         private Button btnClearDiferida;
         private Button btnClearVencida;
         private Button btnClearAnticipada;
+        private TextBox VtxtGradienteVP;
+        private Label label36;
+        private PictureBox pbFormula2VF;
+        private CheckBox chkGradienteVF;
+        private TextBox VtxtGradienteVF;
+        private Label label37;
+        private CheckBox chkFormulas;
+        private PictureBox pbFormula2VP;
+        private CheckBox chkGradienteVP;
+        private PictureBox APbFormula2VF;
+        private CheckBox AChkConGradienteVF;
+        private TextBox AtxtGradienteVF;
+        private Label label39;
+        private PictureBox APbFormula2VP;
+        private CheckBox AChckFormulasVer;
+        private CheckBox AChkConGradienteVP;
+        private TextBox AtxtGradienteVP;
+        private Label label38;
+        private CheckBox DChckFormulasVer;
+        private CheckBox DchkGradienteVP;
+        private TextBox DtxtGradienteVP;
+        private Label label40;
+        private CheckBox DchkGradienteVF;
+        private TextBox DtxtGradienteVF;
+        private Label label41;
+        private PictureBox DPbFormula2VP;
+        private PictureBox DPbFormula2VF;
     }
 }

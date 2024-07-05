@@ -183,6 +183,16 @@ namespace EconomicaForm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circulo_de_dos_flechas_giratorias_circulares_en_sentido_horario {
+            get {
+                object obj = ResourceManager.GetObject("circulo-de-dos-flechas-giratorias-circulares-en-sentido-horario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap copiar_link {
             get {
                 object obj = ResourceManager.GetObject("copiar-link", resourceCulture);
@@ -406,6 +416,56 @@ namespace EconomicaForm.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_07_04_201705 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-07-04 201705", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_05_014628 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-05 014628", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_05_014757 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-05 014757", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_05_030121 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-05 030121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_05_030158 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-05 030158", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_07_05_033300 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-07-05 033300", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

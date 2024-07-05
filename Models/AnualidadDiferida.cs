@@ -12,7 +12,7 @@ namespace Models
     {
         [Required]
         [Range(1, int.MaxValue, ErrorMessage = "El número de periodos de diferimiento debe ser mayor o igual a 1.")]
-        public decimal PeriodosDiferimiento { get; set; }
+        public int PeriodosDiferimiento { get; set; }
     }
 
 }
