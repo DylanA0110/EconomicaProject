@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             panel1 = new Panel();
             btnConversor = new Button();
@@ -41,6 +42,7 @@
             panelContenedor = new Panel();
             PBMinimizar = new PictureBox();
             PBCerrar = new PictureBox();
+            tipAyuda = new ToolTip(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelContenedor.SuspendLayout();
@@ -80,6 +82,7 @@
             btnConversor.Size = new Size(153, 31);
             btnConversor.TabIndex = 7;
             btnConversor.Text = "Conversor tasas";
+            tipAyuda.SetToolTip(btnConversor, "Convierte tasas de interés entre periodos como mensual, trimestral, semestral y anual, y entre tasas nominales y efectivas.");
             btnConversor.UseVisualStyleBackColor = true;
             btnConversor.Click += btnConversor_Click;
             // 
@@ -116,6 +119,7 @@
             btnCalendario.Size = new Size(144, 55);
             btnCalendario.TabIndex = 5;
             btnCalendario.Text = "Calendario de pagos";
+            tipAyuda.SetToolTip(btnCalendario, "Programa detallado de pagos futuros con fechas y cantidades para préstamos o inversiones.");
             btnCalendario.UseVisualStyleBackColor = true;
             btnCalendario.Click += btnCalendario_Click;
             // 
@@ -134,6 +138,7 @@
             btnIE.Size = new Size(144, 49);
             btnIE.TabIndex = 4;
             btnIE.Text = "Indicadores Economicos";
+            tipAyuda.SetToolTip(btnIE, "Métricas financieras para medir la rentabilidad y viabilidad de proyectos, como TMAR, VPN y TIR.");
             btnIE.UseVisualStyleBackColor = true;
             btnIE.Click += btnIE_Click;
             // 
@@ -152,6 +157,7 @@
             btnAnualidad.Size = new Size(144, 31);
             btnAnualidad.TabIndex = 3;
             btnAnualidad.Text = "Anualidades";
+            tipAyuda.SetToolTip(btnAnualidad, "Pagos periódicos iguales hechos a intervalos regulares, como mensual o anual.");
             btnAnualidad.UseVisualStyleBackColor = true;
             btnAnualidad.Click += btnAnualidad_Click;
             // 
@@ -170,6 +176,7 @@
             btnIC.Size = new Size(147, 31);
             btnIC.TabIndex = 2;
             btnIC.Text = "Interes Compuesto";
+            tipAyuda.SetToolTip(btnIC, "Interés que se calcula sobre el capital inicial más los intereses acumulados, generando más intereses.");
             btnIC.UseVisualStyleBackColor = true;
             btnIC.Click += btnIC_Click;
             // 
@@ -188,6 +195,7 @@
             btnIS.Size = new Size(144, 31);
             btnIS.TabIndex = 1;
             btnIS.Text = "Interes Simple";
+            tipAyuda.SetToolTip(btnIS, "Interés calculado únicamente sobre el capital inicial sin acumular intereses.");
             btnIS.UseVisualStyleBackColor = true;
             btnIS.Click += btnIS_Click;
             // 
@@ -264,5 +272,6 @@
         private Panel panelContenedor;
         private PictureBox PBMinimizar;
         private PictureBox PBCerrar;
+        private ToolTip tipAyuda;
     }
 }

@@ -46,7 +46,7 @@ namespace EconomicaForm
 
                 // Convierte la tasa
                 decimal tasaConvertida = _conversor.ConvertirTasa(tasa, periodoActual, periodoObjetivo, tipoTasa);
-                txtResultado.Text = tasaConvertida.ToString("F2") + "%";
+                txtResultado.Text = tasaConvertida.ToString("G") + "%";
             }
             catch (FormatException)
             {

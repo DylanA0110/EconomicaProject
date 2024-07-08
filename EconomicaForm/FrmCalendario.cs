@@ -56,7 +56,7 @@ namespace EconomicaForm
 
                 foreach (var pago in calendarioDePagos)
                 {
-                    dataGridView1.Rows.Add(pago.Periodo, pago.Principal.ToString("N2"), pago.Interes.ToString("N2"), pago.Cuota.ToString("N2"), pago.Saldo.ToString("N2"));
+                    dataGridView1.Rows.Add(pago.Periodo, pago.Principal.ToString("G"), pago.Interes.ToString("G"), pago.Cuota.ToString("G"), pago.Saldo.ToString("G"));
                 }
                 if (calendarioDePagos[0].Periodo == 0)
                 {

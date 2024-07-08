@@ -45,7 +45,7 @@ namespace EconomicaForm
             else
             {
                 decimal resultado = _service.CalcularICValorFuturo(VF);
-                VFtxtResultado.Text = resultado.ToString();
+                VFtxtResultado.Text = resultado.ToString("G");
             }
 
         }
@@ -88,7 +88,7 @@ namespace EconomicaForm
             else
             {
                 decimal resultado = _service.CalcularICValorPresente(VP);
-                VPtxtResultado.Text = resultado.ToString();
+                VPtxtResultado.Text = resultado.ToString("G");
             }
         }
         private void ClearVP()
@@ -128,7 +128,7 @@ namespace EconomicaForm
             else
             {
                 decimal resultado = _service.CalcularICInteres(interes);
-                ItxtResultado.Text = resultado.ToString();
+                ItxtResultado.Text = resultado.ToString("G");
             }
         }
         private void ClearInteres()
@@ -171,7 +171,7 @@ namespace EconomicaForm
             else
             {
                 decimal resultado = _service.CalcularICTPeriodo(periodo);
-                PtxtResultado.Text = resultado.ToString();
+                PtxtResultado.Text = resultado.ToString("G");
             }
         }
         private void ClearPeriodo()

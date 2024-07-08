@@ -14,9 +14,6 @@ namespace EconomicaForm
             InitializeComponent();
             _calculationService = new CalculationService(); // Instancia de CalculationService
         }
-
-
-
         private bool ValidateInputs(params TextBox[] textBoxes)
         {
             foreach (var textBox in textBoxes)
@@ -59,7 +56,7 @@ namespace EconomicaForm
             }
 
             decimal valorPresente = _calculationService.AnualidadVencidaVP(anualidad);
-            VtxtVPResultado.Text = valorPresente.ToString("F2");
+            VtxtVPResultado.Text = valorPresente.ToString("G");
         }
 
         private void btnCalVFVencida_Click(object sender, EventArgs e)
@@ -91,7 +88,7 @@ namespace EconomicaForm
                 anualidad.Gradiente = 0; // O puede ser un valor por defecto si es necesario.
             }
             decimal valorFuturo = _calculationService.AnualidadVencidaVF(anualidad);
-            vTxtResultadoVF.Text = valorFuturo.ToString("F2");
+            vTxtResultadoVF.Text = valorFuturo.ToString("G");
         }
 
         private void BtnCalVPAnticipada_Click(object sender, EventArgs e)
@@ -123,7 +120,7 @@ namespace EconomicaForm
             }
 
             decimal valorPresente = _calculationService.AnualidadAnticipadaVP(anualidad);
-            AtxtResultado.Text = valorPresente.ToString("F2");
+            AtxtResultado.Text = valorPresente.ToString("G");
         }
 
         private void btnCalVFAnticipada_Click(object sender, EventArgs e)
@@ -155,7 +152,7 @@ namespace EconomicaForm
             }
 
             decimal valorFuturo = _calculationService.AnualidadAnticipadaVF(anualidad);
-            AtxtResultadoVF.Text = valorFuturo.ToString("F2");
+            AtxtResultadoVF.Text = valorFuturo.ToString("G");
         }
 
         private void btnCalcularDiferidaVP_Click(object sender, EventArgs e)
@@ -189,7 +186,7 @@ namespace EconomicaForm
 
 
                 decimal valorPresente = _calculationService.AnualidadDiferidaVP(anualidadDiferida);
-            DtxtResultadoVP.Text = valorPresente.ToString("F2");
+            DtxtResultadoVP.Text = valorPresente.ToString("G");
         }
 
         private void btnCalcularVFDiferida_Click(object sender, EventArgs e)
@@ -222,7 +219,7 @@ namespace EconomicaForm
             }
 
             decimal valorFuturo = _calculationService.AnualidadDiferidaVF(anualidadDiferida);
-            DtxtResultadoVF.Text = valorFuturo.ToString("F2");
+            DtxtResultadoVF.Text = valorFuturo.ToString("G");
         }
 
         private void btnClearVencida_Click(object sender, EventArgs e)

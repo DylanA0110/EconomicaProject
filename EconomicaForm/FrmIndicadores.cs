@@ -28,7 +28,7 @@ namespace EconomicaForm
             // Agregar una fila inicial
             dataGridView2.Rows.Add(0, 0);
             dataGridView2.Columns[0].Width = 200;
-            dataGridView2.Columns[1].DefaultCellStyle.Format = "N2";
+            dataGridView2.Columns[1].DefaultCellStyle.Format = "G";
 
             // Hacer que las celdas sean editables
             dataGridView2.Columns[1].CellTemplate.Style.BackColor = System.Drawing.Color.White;
@@ -43,7 +43,7 @@ namespace EconomicaForm
             // Agregar una fila inicial
             dataGridView1.Rows.Add(0, 0);
             dataGridView1.Columns[0].Width = 200;
-            dataGridView1.Columns[1].DefaultCellStyle.Format = "N2";
+            dataGridView1.Columns[1].DefaultCellStyle.Format = "G";
 
             // Hacer que las celdas sean editables
             dataGridView1.Columns[1].CellTemplate.Style.BackColor = System.Drawing.Color.White;
@@ -172,7 +172,7 @@ namespace EconomicaForm
                     PrimaDeRiesgo = prima
                 };
                 decimal resultado = _calculationService.CalcularTMAR(tmar);
-                tmarTxtResultado.Text = resultado.ToString("N2");
+                tmarTxtResultado.Text = resultado.ToString("G");
             }
         }
 
@@ -196,7 +196,7 @@ namespace EconomicaForm
                 try
                 {
                     decimal tir = _calculationService.CalcularTIR(inversion);
-                    txtTIR.Text = tir.ToString("N2") + "%";
+                    txtTIR.Text = tir.ToString("G") + "%";
                 }
                 catch (Exception ex)
                 {
@@ -221,7 +221,7 @@ namespace EconomicaForm
                 {
                     // Calculamos el VPN
                     decimal vpn = _calculationService.CalcularVPN(inversion);
-                    txtVPN.Text = vpn.ToString("N2");
+                    txtVPN.Text = vpn.ToString("G");
                 }
                 catch (Exception ex)
                 {
